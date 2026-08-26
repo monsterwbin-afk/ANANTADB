@@ -1,0 +1,6 @@
+{
+  "name": "Ananta Fan Guide & Technical Toolkit",
+  "description": "An unofficial multi-language player guide and utility toolkit for Ananta, featuring live stamina calculations, weekly/daily progression trackers, and tactical squad synergy builders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
