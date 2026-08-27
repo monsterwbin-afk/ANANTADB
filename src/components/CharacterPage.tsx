@@ -35,8 +35,14 @@ const CHARACTERS: Record<string, {
     bg: 'https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg',
   },
   shiye: {
-    image: 'https://www.anantagame.com/pc/gw/20260809220138/assets/shiye-panel-01_9f568500.png',
+    image: 'https://www.anantagame.com/2026/0824/7afe1c6cbac07efe994f349199c1e226.mp4',
     gradientTo: '#1d1405',
+    video: 'https://www.anantagame.com/2025/0924/b09de7064df692f4abcf0b6483b41290.mp4',
+    bg: 'https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg',
+  },
+  yinglong: {
+    image: 'https://www.anantagame.com/2026/0822/677882b05d7f33d20b63e64e1bca33c8.mp4',
+    gradientTo: '#0c1c24',
     video: 'https://www.anantagame.com/2025/0924/b09de7064df692f4abcf0b6483b41290.mp4',
     bg: 'https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg',
   }
@@ -715,6 +721,20 @@ function getLocalizedCharacters(lang: string): Record<string, {
           { name: 'Aether Shielding Matrix (Skill)', desc: 'Deploys a digital shielding matrix that absorbs damage based on current squad funding, granting teammates continuous regeneration.' },
           { name: 'Budget Overhaul (Ultimate)', desc: 'Taps into the financial database to optimize squad resources, resetting cooldowns of allies\' active skills and increasing overall tactical efficiency.' }
         ]
+      },
+      yinglong: {
+        name: 'WEI YINGLONG',
+        role: '21st Director · A.C.D. Agent',
+        type: 'Combat',
+        element: 'Frost',
+        weapon: 'Lingyun Azure Staff',
+        affiliation: 'Chongxiao Lingyun / A.C.D.',
+        desc: 'As the 21st Director of Lingyun, she manages the ancient temple, watches over the villagers, and keeps her troublemaking sister under tight control. She wields supreme cryogenic powers with martial art elegance.',
+        skills: [
+          { name: 'Azure Pierce (Basic)', desc: 'Strikes gracefully with her Azure Staff, dealing physical and Frost damage in a 4-hit combo.' },
+          { name: 'Lingyun Cyclone (Skill)', desc: 'Spins her staff rapidly to create a freezing vortex that draws in nearby enemies, dealing continuous Frost damage and slowing their movement.' },
+          { name: 'Dragon\'s Frostfall (Ultimate)', desc: 'Leaps high and summons the ancient frost dragon spirit to crash down, freezing all enemies in a massive radius and granting herself Cryo-enhanced strikes for 12 seconds.' }
+        ]
       }
     },
     CN: {
@@ -786,6 +806,20 @@ function getLocalizedCharacters(lang: string): Record<string, {
           { name: '精准预算结算 (普通攻击)', desc: '操纵高能投影数据进行快速攻击，对敌人造成以太属性伤害，并标记目标进行资金回收。' },
           { name: '以太防御屏障 (元素战技)', desc: '部署全息战术终端形成强力科技屏障，吸收受到的所有属性伤害，同时为队友提供持续以太能量回复。' },
           { name: '财务重组协议 (元素爆发)', desc: '全面重组战场战术分配，优化小队技能冷却，重置队友技能并大幅提升全体队员的作战效率与防御能力。' }
+        ]
+      },
+      yinglong: {
+        name: '魏莹珑 (WEI YINGLONG)',
+        role: '重霄凌云第21代掌门 · A.C.D. 探测员',
+        type: '强攻',
+        element: '极寒',
+        weapon: '碧空长枪',
+        affiliation: '重霄凌云 / A.C.D.',
+        desc: '作为重霄凌云第21代掌门，她统管着宗门古庙，照顾村落中的孩子们，并时刻约束着那爱惹麻烦的妹妹。在战斗中，她将极寒冰雪之力与飘逸的枪术完美融合。',
+        skills: [
+          { name: '碧空流光闪 (普通攻击)', desc: '手持长枪进行优雅的四段枪刺，造成物理与极寒属性伤害。' },
+          { name: '凌云枪舞 · 霜风 (元素战技)', desc: '高速舞动长枪形成极寒旋风，将周围的敌人吸附至枪尖，造成持续极寒伤害并大幅减速。' },
+          { name: '苍龙覆雪斩 (元素爆发)', desc: '跃入半空，引动古老霜龙之灵降临战阵，对大范围内的所有敌人进行强力寒冬震击，使敌人陷入冰冻状态，并获得12秒的寒霜附魔。' }
         ]
       }
     },
@@ -859,6 +893,20 @@ function getLocalizedCharacters(lang: string): Record<string, {
           { name: '乙太防禦屏障 (元素戰技)', desc: '部署全息戰術終端形成強力科技屏障，吸收受到的所有屬性傷害，同時為隊友提供持續乙太能量回復。' },
           { name: '財務重組協定 (元素爆發)', desc: '全面重組戰場戰術分配，優化小隊技能冷卻，重置隊友技能並大幅提升全體隊員的作戰效率與防禦能力。' }
         ]
+      },
+      yinglong: {
+        name: '魏瑩瓏 (WEI YINGLONG)',
+        role: '重霄凌雲第21代掌門 · A.C.D. 探測員',
+        type: '強攻',
+        element: '極寒',
+        weapon: '碧空長槍',
+        affiliation: '重霄凌雲 / A.C.D.',
+        desc: '作為重霄凌雲第21代掌門，她統管著宗門古廟，照顧村落中的孩子們，並時刻約束著那愛惹麻煩的妹妹。在戰鬥中，她將極寒冰雪之力與飄逸的槍術完美融合。',
+        skills: [
+          { name: '碧空流光閃 (普通攻擊)', desc: '手持長槍進行優雅的四段槍刺，造成物理與極寒屬性傷害。' },
+          { name: '凌雲槍舞 · 霜風 (元素戰技)', desc: '高速舞動長槍形成極寒旋風，將周圍的敵人吸附至槍尖，造成持續極寒傷害並大幅減速。' },
+          { name: '蒼龍覆雪斬 (元素爆發)', desc: '躍入半空，引動古老霜龍之靈降臨戰陣，對大範圍內的所有敵人進行強力寒冬震擊，使敵人陷入冰凍狀態，並獲得12秒的寒霜附魔。' }
+        ]
       }
     },
     JP: {
@@ -930,6 +978,20 @@ function getLocalizedCharacters(lang: string): Record<string, {
           { name: '精密予算精算 (通常攻撃)', desc: 'ホログラフィックデータを用いて素早く攻撃し、敵にエーテル属性ダメージを与えて資金リサイクルタグを付与する。' },
           { name: 'エーテル・バリア (スキル)', desc: 'ハイテク戦術端末を展開して強固な電磁バリアを生成。敵の攻撃を吸収するとともに、味方のエーテルエネルギーを継続回復する。' },
           { name: '財務再構築プロトコル (アルティメット)', desc: '戦場のリソース配分を再構築して味方のスキルクールダウンをリセットし、小隊全員の攻撃効率と耐久力を飛躍的に向上させる。' }
+        ]
+      },
+      yinglong: {
+        name: 'ウェイ・インロン (WEI YINGLONG)',
+        role: '凌雲第21代門主 · A.C.D.',
+        type: 'アタッカー',
+        element: '氷結',
+        weapon: '碧空長槍',
+        affiliation: '凌雲 / A.C.D.',
+        desc: '凌雲の第21代門主として、古の寺院を管理し、村の子供たちの世話をしながら、トラブルメーカーの妹を厳しく見守っている。卓越した槍術と極低温の力を操る。',
+        skills: [
+          { name: '碧空の流星突 (通常攻撃)', desc: '長槍で優雅な4段突きを繰り出し、物理および氷結ダメージを与える。' },
+          { name: '凌雲槍舞・霜風 (スキル)', desc: '槍を高速で回転させて凍てつく渦を生み出し、周囲の敵を引き寄せながら持続的な氷結ダメージと減速効果を与える。' },
+          { name: '蒼龍降雪の刃 (必殺技)', desc: '空中へ跳躍し、古の霜龍の精霊を召喚して地表に叩きつける。広範囲의 敵を氷結状態にし、自身に12秒間、氷結属性の追撃効果を付与する。' }
         ]
       }
     },
@@ -1003,6 +1065,20 @@ function getLocalizedCharacters(lang: string): Record<string, {
           { name: '에테르 실딩 매트릭스 (전투 스킬)', desc: '디지털 방어 장벽을 전개하여 아군이 받는 원소 피해를 흡수하고 분대원들에게 초당 에너지를 지속 회복시킵니다.' },
           { name: '예산 재배정 프로토콜 (필살기)', desc: '팀 리소스를 실시간으로 최적화하여 동료들의 스킬 쿨타임을 리셋하고 공격력과 작전 효율을 대폭 끌어올립니다.' }
         ]
+      },
+      yinglong: {
+        name: '웨이 잉롱 (WEI YINGLONG)',
+        role: '릉운 제21대 장문 · A.C.D. 요원',
+        type: '전투',
+        element: '빙결',
+        weapon: '벽공 장창',
+        affiliation: '릉운 / A.C.D.',
+        desc: '릉운의 제21대 장문로서 사원을 지키고 롱치 마을 아이들을 보살피며, 말썽꾸러기 여동생을 철저히 감시한다. 빙결 원소와 우아한 창술을 사용해 적을 격퇴한다.',
+        skills: [
+          { name: '벽공 유광 찌르기 (일반 공격)', desc: '장창으로 우아한 4단 찌르기 공격을 가해 물리 및 빙결 피해를 입힙니다.' },
+          { name: '릉운 창무 · 서리 바람 (전투 스킬)', desc: '창을 빠르게 회전시켜 서리 폭풍을 일으켜 주위 적을 끌어당기고 지속적인 빙결 피해와 감속 디버프를 부여합니다.' },
+          { name: '창룡 하설 참격 (필살기)', desc: '공중으로 도약해 고대 장벽에 서리 용의 영혼을 강림시켜 광범위한 적을 빙결 상태로 만들고, 12초 동안 서리 강화 평타 속성을 획득합니다.' }
+        ]
       }
     }
   };
@@ -1052,7 +1128,26 @@ export function CharacterPage({ characterId }: { characterId: string }) {
           <div className="flex gap-12 items-center w-full max-w-7xl mx-auto">
             {/* Portrait */}
             <div className="w-[30%] max-w-[400px] aspect-[3/4] border border-ananta-neon/30 bg-ananta-bg3 relative overflow-hidden group shadow-[0_0_50px_rgba(0,229,255,0.1)]">
-              <img src={char.image} alt={char.name} referrerPolicy="no-referrer" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              {char.image.endsWith('.mp4') ? (
+                <video
+                  src={char.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : (
+                <img
+                  src={char.image}
+                  alt={char.name}
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=600&auto=format&fit=crop';
+                  }}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              )}
               <div className="absolute inset-0 char-gradient opacity-80" />
               <div className="absolute bottom-4 left-4 border-l-2 border-ananta-neon pl-3">
                 <div className="text-white font-display text-4xl">{char.name}</div>

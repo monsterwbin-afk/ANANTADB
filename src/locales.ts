@@ -364,6 +364,16 @@ export const translations = {
                       "Support",
                       "Tactician"
               ]
+      },
+      {
+        "name": "WEI YINGLONG",
+        "role": "21st Director · A.C.D. Agent",
+        "desc": "\"Lingyun's trouble is my trouble.\" The 21st Director of Lingyun. She manages the ancient temple and keeps her sister under tight control. Known to villagers as the matriarch of children and Queen of Longqi.",
+        "tags": [
+          "Frost",
+          "Combat",
+          "Director"
+        ]
       }],
     "mapDistricts": [
       {
@@ -877,6 +887,16 @@ export const translations = {
                       "支援",
                       "战术"
               ]
+      },
+      {
+        "name": "魏莹珑",
+        "role": "重霄凌云第21代掌门 · A.C.D. 探测员",
+        "desc": "“凌云的麻烦就是我的麻烦。”重霄凌云第21代掌门，负责统管宗门庙宇并约束她那爱惹麻烦的妹妹。被龙栖村的村民们尊称为“孩子王”与“龙栖女王”。",
+        "tags": [
+          "极寒",
+          "强攻",
+          "掌门"
+        ]
       }],
     "mapDistricts": [
       {
@@ -1390,6 +1410,16 @@ export const translations = {
                       "支援",
                       "戰術"
               ]
+      },
+      {
+        "name": "魏瑩瓏",
+        "role": "重霄凌雲第21代掌門 · A.C.D. 探測員",
+        "desc": "「凌雲的麻煩就是我的麻煩。」重霄凌雲第21代掌門，負責統管宗門廟宇並約束她那愛惹麻煩的妹妹。被龍棲村的村民們尊稱為「孩子王」與「龍棲女王」。",
+        "tags": [
+          "極寒",
+          "強攻",
+          "掌門"
+        ]
       }],
     "mapDistricts": [
       {
@@ -1897,12 +1927,22 @@ export const translations = {
       {
               "name": "シー・イェ",
               "role": "財務担当官 · A.C.D. エージェント",
-              "desc": "「お金の管理は私が、戦うのはあなた。」 キャプテンの旧友。テクノロジーやアイデアを駆使し、新星都市の現場財務や物資調達を担当する非常に有能な頭脳。",
+              "desc": "「お金の管理は私が、戦うのはあなた。」 キャプテン of... キャプテンの旧友。テクノロジーやアイデアを駆使し、新星都市の現場財務や物資調達を担当する非常に有能な頭脳。",
               "tags": [
                       "エーテル",
                       "支援",
                       "戦術"
               ]
+      },
+      {
+        "name": "ウェイ・インロン",
+        "role": "凌雲第21代門主 · A.C.D.",
+        "desc": "「凌雲の厄介事は私の厄介事。」凌雲の第21代門主。古の寺院を管理し、トラブルメーカーの妹を厳しく監視している。村人からは子供たちの守護者、そして「龍栖の女王」と慕われている。",
+        "tags": [
+          "氷結",
+          "アタッカー",
+          "門主"
+        ]
       }],
     "mapDistricts": [
       {
@@ -2416,6 +2456,16 @@ export const translations = {
                       "지원",
                       "전술"
               ]
+      },
+      {
+        "name": "웨이 잉롱",
+        "role": "릉운 제21대 장문 · A.C.D. 요원",
+        "desc": "\"릉운의 골칫거리는 곧 나의 골칫거리다.\" 릉운의 제21대 장문. 고대 사원을 관리하며 말썽꾸러기 여동생을 엄격히 통제한다. 마을 사람들에게는 아이들의 대모이자 '롱치 여왕'으로 불린다.",
+        "tags": [
+          "빙결",
+          "전투",
+          "장문"
+        ]
       }],
     "mapDistricts": [
       {
@@ -2929,6 +2979,16 @@ export const translations = {
                       "Unterstützung",
                       "Taktik"
               ]
+      },
+      {
+        "name": "ВЭЙ ИНЛУН",
+        "role": "21-й директор · Агент A.C.D.",
+        "desc": "«Проблемы Линъюнь — мои проблемы». 21-й директор Линъюнь. Управляет древним храмом и держит свою сестру-бунтарку под строгим контролем. Известна местным как матриарх детей и Королева Лунци.",
+        "tags": [
+          "Лед",
+          "Бой",
+          "Директор"
+        ]
       }],
     "mapDistricts": [
       {
@@ -3442,6 +3502,16 @@ export const translations = {
                       "Soutien",
                       "Tactique"
               ]
+      },
+      {
+        "name": "WEI YINGLONG",
+        "role": "21.ª Directora · Agente de A.C.D.",
+        "desc": "\"Los problemas de Lingyun son mis problemas\". La 21.ª Directora de Lingyun. Administra el antiguo templo y mantiene a su problemática hermana bajo estricto control. Conocida por los aldeanos como la matriarca de los niños y la Reina de Longqi.",
+        "tags": [
+          "Escarcha",
+          "Combate",
+          "Directora"
+        ]
       }],
     "mapDistricts": [
       {
@@ -3955,6 +4025,16 @@ export const translations = {
                       "Supporto",
                       "Tattica"
               ]
+      },
+      {
+        "name": "WEI YINGLONG",
+        "role": "21e Directrice · Agent de l'A.C.D.",
+        "desc": "\"Les ennuis de Lingyun sont mes ennuis.\" La 21e Directrice de Lingyun. Elle gère le temple antique et garde sa sœur sous contrôle strict. Connue par les villageois comme la matriarche des enfants et la Reine de Longqi.",
+        "tags": [
+          "Givre",
+          "Combat",
+          "Directrice"
+        ]
       }],
     "mapDistricts": [
       {
@@ -4468,6 +4548,16 @@ export const translations = {
                       "Поддержка",
                       "Тактика"
               ]
+      },
+      {
+        "name": "WEI YINGLONG",
+        "role": "21. Direktorin · A.C.D.-Agentin",
+        "desc": "„Die Probleme von Lingyun sind meine Probleme.“ Die 21. Direktorin von Lingyun. Sie leitet den alten Tempel und hält ihre rebellische Schwester unter strenger Kontrolle. Bekannt bei den Dorfbewohnern als Matriarchin der Kinder und Königin von Longqi.",
+        "tags": [
+          "Frost",
+          "Kampf",
+          "Direktorin"
+        ]
       }],
     "mapDistricts": [
       {

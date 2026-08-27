@@ -34,9 +34,15 @@ export function Characters() {
     },
     {
       id: 'shiye',
-      image: 'https://www.anantagame.com/pc/gw/20260809220138/assets/shiye-panel-01_9f568500.png',
+      image: 'https://www.anantagame.com/2026/0824/7afe1c6cbac07efe994f349199c1e226.mp4',
       gradientTo: '#1d1405',
       typeClass: 'text-[#f59e0b] border-[#f59e0b] bg-[#f59e0b]/10',
+    },
+    {
+      id: 'yinglong',
+      image: 'https://www.anantagame.com/2026/0822/677882b05d7f33d20b63e64e1bca33c8.mp4',
+      gradientTo: '#0c1c24',
+      typeClass: 'text-ananta-neon border-ananta-neon bg-ananta-neon/10',
     }
   ];
 
@@ -61,7 +67,26 @@ export function Characters() {
         {roster.map(char => (
           <a href={`/wiki/characters/${char.id}`} key={char.id} className="group flex flex-col bg-ananta-bg border border-ananta-border overflow-hidden transition-all duration-300 hover:border-ananta-neon/40 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,229,255,0.1)] focus:outline-none focus:border-ananta-neon">
             <div className="w-full aspect-[3/4] bg-ananta-bg3 relative overflow-hidden flex items-end justify-center char-portrait-bg" style={{ '--tw-gradient-to': char.gradientTo } as React.CSSProperties}>
-              <img src={char.image} alt={char.name} referrerPolicy="no-referrer" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+              {char.image.endsWith('.mp4') ? (
+                <video
+                  src={char.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              ) : (
+                <img
+                  src={char.image}
+                  alt={char.name}
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=600&auto=format&fit=crop';
+                  }}
+                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              )}
               <div className="char-gradient absolute inset-0" />
               
               <span className={`absolute top-3 right-3 font-mono text-[0.55rem] tracking-[0.15em] uppercase px-2 py-0.5 border ${char.typeClass}`}>
