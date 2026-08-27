@@ -172,9 +172,25 @@ function getOrCreateVoterToken(): string {
   }
 }
 
-export function VotingWidget() {
-  const { lang } = useLanguage();
-  const [roles, setRoles] = useState<Role[]>(() => {
+// Shared store for Voting state to perfectly synchronize desktop and mobile instances on the same page
+interface VotingStore {
+  roles: Role[];
+  totalVoters: number;
+  votedIds: string[];
+  isVoting: string | null;
+  dbMode: 'supabase' | 'github' | 'local' | 'offline';
+  toastMsg: string | null;
+}
+
+const DEFAULT_ROLES: Role[] = [
+  { id: 'taffy', name: '塔菲', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-tafei_0ed12004.jpg', color: '#eab308', total_votes: 1256 },
+  { id: 'richie', name: '里栖', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-lixi_a69544ea.jpg', color: '#4ade80', total_votes: 942 },
+  { id: 'lykaia', name: '赛墨', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-saimo_d1a180a7.jpg', color: '#ff4d6d', total_votes: 684 },
+  { id: 'captain', name: '队长', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-captain_c7ae1344.jpg', color: '#00e5ff', total_votes: 452 }
+];
+
+let storeState: VotingStore = {
+  roles: (() => {
     try {
       const cached = localStorage.getItem('ananta_cached_roles');
       if (cached) {
@@ -182,14 +198,9 @@ export function VotingWidget() {
         if (parsed && parsed.length > 0) return parsed;
       }
     } catch (_) {}
-    return [
-      { id: 'taffy', name: '塔菲', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-tafei_0ed12004.jpg', color: '#eab308', total_votes: 1256 },
-      { id: 'richie', name: '里栖', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-lixi_a69544ea.jpg', color: '#4ade80', total_votes: 942 },
-      { id: 'lykaia', name: '赛墨', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-saimo_d1a180a7.jpg', color: '#ff4d6d', total_votes: 684 },
-      { id: 'captain', name: '队长', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-captain_c7ae1344.jpg', color: '#00e5ff', total_votes: 452 }
-    ];
-  });
-  const [totalVoters, setTotalVoters] = useState<number>(() => {
+    return DEFAULT_ROLES;
+  })(),
+  totalVoters: (() => {
     try {
       const cached = localStorage.getItem('ananta_cached_total_voters');
       if (cached) {
@@ -197,9 +208,8 @@ export function VotingWidget() {
       }
     } catch (_) {}
     return 0;
-  });
-  const [dbMode, setDbMode] = useState<'supabase' | 'github' | 'local' | 'offline'>('offline');
-  const [votedIds, setVotedIds] = useState<string[]>(() => {
+  })(),
+  votedIds: (() => {
     try {
       const todayStr = getLocalDateString();
       const localKey = `ananta_voted_${todayStr}`;
@@ -208,13 +218,46 @@ export function VotingWidget() {
     } catch (_) {
       return [];
     }
-  });
-  const [isVoting, setIsVoting] = useState<string | null>(null);
+  })(),
+  isVoting: null,
+  dbMode: 'offline',
+  toastMsg: null
+};
+
+const storeListeners = new Set<() => void>();
+
+function updateStore(next: Partial<VotingStore>) {
+  storeState = { ...storeState, ...next };
+  storeListeners.forEach(listener => listener());
+}
+
+export function VotingWidget() {
+  const { lang } = useLanguage();
+  const [, forceUpdate] = useState({});
   const [showModal, setShowModal] = useState(false);
-  const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  // Subscribe to the shared store updates
+  useEffect(() => {
+    const handleUpdate = () => forceUpdate({});
+    storeListeners.add(handleUpdate);
+    return () => {
+      storeListeners.delete(handleUpdate);
+    };
+  }, []);
+
+  const { roles, totalVoters, votedIds, isVoting, dbMode, toastMsg } = storeState;
 
   // Translate labels based on active user context
   const text = LOCALES[lang as keyof typeof LOCALES] || LOCALES.EN;
+
+  const triggerToast = (msg: string) => {
+    updateStore({ toastMsg: msg });
+    setTimeout(() => {
+      if (storeState.toastMsg === msg) {
+        updateStore({ toastMsg: null });
+      }
+    }, 3000);
+  };
 
   // Fetch updated votes on load, and set a safety local caching mechanism
   const fetchVotes = async (silent = false) => {
@@ -224,7 +267,7 @@ export function VotingWidget() {
       const res = await fetch(`/api/votes?voter_token=${encodeURIComponent(token)}&client_date=${clientDateStr}&_t=${Date.now()}`);
       
       if (res.status === 429) {
-        setDbMode('local');
+        updateStore({ dbMode: 'local' });
         if (!silent) console.warn('[Voting] Rate limited by server (status 429). Falling back to cached data silently.');
         return;
       }
@@ -235,39 +278,37 @@ export function VotingWidget() {
       
       const data = await res.json();
       if (data && data.success) {
-        setDbMode(data.mode || 'local');
+        let mergedRoles = data.roles || [];
         
-        if (data.roles && data.roles.length > 0) {
-          let mergedRoles = data.roles;
-          
-          // If the server is in local mode and returns 0 or low votes, merge with client-side cached counts
-          // to protect the user's progress display against ephemeral container wipes/redeployments!
-          if (data.mode === 'local') {
-            try {
-              const cached = localStorage.getItem('ananta_cached_roles');
-              if (cached) {
-                const parsedCached = JSON.parse(cached) as Role[];
-                if (parsedCached && parsedCached.length > 0) {
-                  mergedRoles = data.roles.map((srvRole: Role) => {
-                    const localRole = parsedCached.find(r => r.id === srvRole.id);
-                    if (localRole) {
-                      return {
-                        ...srvRole,
-                        total_votes: Math.max(srvRole.total_votes || 0, localRole.total_votes || 0)
-                      };
-                    }
-                    return srvRole;
-                  });
-                }
-              }
-            } catch (_) {}
-          }
-          
-          setRoles(mergedRoles);
+        // If the server is in local mode and returns 0 or low votes, merge with client-side cached counts
+        // to protect the user's progress display against ephemeral container wipes/redeployments!
+        if (data.mode === 'local') {
           try {
-            localStorage.setItem('ananta_cached_roles', JSON.stringify(mergedRoles));
+            const cached = localStorage.getItem('ananta_cached_roles');
+            if (cached) {
+              const parsedCached = JSON.parse(cached) as Role[];
+              if (parsedCached && parsedCached.length > 0) {
+                mergedRoles = mergedRoles.map((srvRole: Role) => {
+                  const localRole = parsedCached.find(r => r.id === srvRole.id);
+                  if (localRole) {
+                    return {
+                      ...srvRole,
+                      total_votes: Math.max(srvRole.total_votes || 0, localRole.total_votes || 0)
+                    };
+                  }
+                  return srvRole;
+                });
+              }
+            }
           } catch (_) {}
         }
+        
+        // Ensure perfect sorting by total_votes descending
+        mergedRoles.sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0));
+        
+        try {
+          localStorage.setItem('ananta_cached_roles', JSON.stringify(mergedRoles));
+        } catch (_) {}
         
         let targetTotalVoters = data.totalVoters ?? 0;
         if (data.mode === 'local') {
@@ -279,7 +320,6 @@ export function VotingWidget() {
           } catch (_) {}
         }
         
-        setTotalVoters(targetTotalVoters);
         try {
           localStorage.setItem('ananta_cached_total_voters', String(targetTotalVoters));
         } catch (_) {}
@@ -288,12 +328,15 @@ export function VotingWidget() {
         const todayStr = getLocalDateString();
         const localKey = `ananta_voted_${todayStr}`;
         const serverVotedList = data.userVotedToday || [];
-        
-        // Only override local storage voted list if serverVotedList has records
-        // to prevent false resets when server falls back or restarts empty.
-        const mergedVoted = Array.from(new Set([...votedIds, ...serverVotedList]));
-        setVotedIds(mergedVoted);
+        const mergedVoted = Array.from(new Set([...storeState.votedIds, ...serverVotedList]));
         localStorage.setItem(localKey, JSON.stringify(mergedVoted));
+
+        updateStore({
+          roles: mergedRoles,
+          totalVoters: targetTotalVoters,
+          dbMode: data.mode || 'local',
+          votedIds: mergedVoted
+        });
       }
     } catch (e) {
       // API call failed (e.g., 404 on static GitHub Pages). Try client-side direct Supabase fallback!
@@ -310,13 +353,12 @@ export function VotingWidget() {
             
           if (rolesError) throw rolesError;
           
-          if (dbRoles && dbRoles.length > 0) {
-            setDbMode('supabase');
-            setRoles(dbRoles);
-            try {
-              localStorage.setItem('ananta_cached_roles', JSON.stringify(dbRoles));
-            } catch (_) {}
-          }
+          let mergedRoles = dbRoles || [];
+          mergedRoles.sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0));
+          
+          try {
+            localStorage.setItem('ananta_cached_roles', JSON.stringify(mergedRoles));
+          } catch (_) {}
           
           // 2. Fetch today's votes for this specific user device token to identify disabled state
           const { data: todayVotes, error: votesError } = await clientSupabase
@@ -325,10 +367,10 @@ export function VotingWidget() {
             .eq('created_at', clientDateStr)
             .eq('voter_token', token);
             
+          let mergedVoted = storeState.votedIds;
           if (!votesError && todayVotes) {
             const serverVotedList = todayVotes.map((v: any) => v.role_id);
-            const mergedVoted = Array.from(new Set([...votedIds, ...serverVotedList]));
-            setVotedIds(mergedVoted);
+            mergedVoted = Array.from(new Set([...storeState.votedIds, ...serverVotedList]));
             localStorage.setItem(`ananta_voted_${clientDateStr}`, JSON.stringify(mergedVoted));
           }
           
@@ -341,18 +383,23 @@ export function VotingWidget() {
           if (!countError && allVotes) {
             totalVotersVal = new Set(allVotes.map((v: any) => v.voter_token).filter(Boolean)).size;
           }
-          setTotalVoters(totalVotersVal);
           try {
             localStorage.setItem('ananta_cached_total_voters', String(totalVotersVal));
           } catch (_) {}
           
+          updateStore({
+            roles: mergedRoles,
+            votedIds: mergedVoted,
+            totalVoters: totalVotersVal,
+            dbMode: 'supabase'
+          });
           return; // Successfully loads via direct Supabase Client!
         } catch (sbsErr) {
           if (!silent) console.error('[Voting] Direct client-side Supabase query fallback failed:', sbsErr);
         }
       }
       
-      setDbMode('offline');
+      updateStore({ dbMode: 'offline' });
       if (!silent) console.error('[Voting] Error fetching votes summary (Backend & Supabase client offline):', e);
     }
   };
@@ -379,34 +426,27 @@ export function VotingWidget() {
     return () => clearInterval(timer);
   }, []);
 
-  const triggerToast = (msg: string) => {
-    setToastMsg(msg);
-    setTimeout(() => {
-      setToastMsg(null);
-    }, 3000);
-  };
-
   const processLocalFallbackVote = (roleId: string, customMessage?: string) => {
-    setRoles(prev => {
-      const next = prev.map(r => r.id === roleId ? { ...r, total_votes: (r.total_votes || 0) + 1 } : r);
-      try {
-        localStorage.setItem('ananta_cached_roles', JSON.stringify(next));
-      } catch (_) {}
-      return next;
-    });
+    const nextRoles = storeState.roles.map(r => r.id === roleId ? { ...r, total_votes: (r.total_votes || 0) + 1 } : r);
+    nextRoles.sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0));
+    try {
+      localStorage.setItem('ananta_cached_roles', JSON.stringify(nextRoles));
+    } catch (_) {}
 
     const todayStr = getLocalDateString();
     const localKey = `ananta_voted_${todayStr}`;
-    const updatedList = Array.from(new Set([...votedIds, roleId]));
-    setVotedIds(updatedList);
+    const updatedList = Array.from(new Set([...storeState.votedIds, roleId]));
     localStorage.setItem(localKey, JSON.stringify(updatedList));
 
-    setTotalVoters(prev => {
-      const next = prev + 1;
-      try {
-        localStorage.setItem('ananta_cached_total_voters', String(next));
-      } catch (_) {}
-      return next;
+    const nextTotalVoters = storeState.totalVoters + 1;
+    try {
+      localStorage.setItem('ananta_cached_total_voters', String(nextTotalVoters));
+    } catch (_) {}
+
+    updateStore({
+      roles: nextRoles,
+      votedIds: updatedList,
+      totalVoters: nextTotalVoters
     });
 
     triggerToast(customMessage || "✓ 投票成功！(本地已同步)");
@@ -418,7 +458,7 @@ export function VotingWidget() {
       triggerToast(lang === 'CN' ? "💡 今天已为该角色投过票了" : "💡 You have already voted for this character today!");
       return;
     }
-    setIsVoting(roleId);
+    updateStore({ isVoting: roleId });
 
     try {
       const token = getOrCreateVoterToken();
@@ -443,22 +483,26 @@ export function VotingWidget() {
       
       const data = await res.json();
       if (data && data.success) {
-        if (data.roles && data.roles.length > 0) {
-          setRoles(data.roles);
-          try {
-            localStorage.setItem('ananta_cached_roles', JSON.stringify(data.roles));
-          } catch (_) {}
-        }
-        setTotalVoters(data.totalVoters ?? 0);
+        let serverRoles = data.roles || [];
+        serverRoles.sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0));
+        try {
+          localStorage.setItem('ananta_cached_roles', JSON.stringify(serverRoles));
+        } catch (_) {}
+        
         try {
           localStorage.setItem('ananta_cached_total_voters', String(data.totalVoters ?? 0));
         } catch (_) {}
         
         const todayStr = getLocalDateString();
         const localKey = `ananta_voted_${todayStr}`;
-        const updatedList = Array.from(new Set([...votedIds, roleId]));
-        setVotedIds(updatedList);
+        const updatedList = Array.from(new Set([...storeState.votedIds, roleId]));
         localStorage.setItem(localKey, JSON.stringify(updatedList));
+
+        updateStore({
+          roles: serverRoles,
+          totalVoters: data.totalVoters ?? 0,
+          votedIds: updatedList
+        });
 
         triggerToast(data.message || "✓ 投票成功！");
       } else {
@@ -492,8 +536,8 @@ export function VotingWidget() {
             // Unique constraint database code '23505' or matching duplicated insertion limits
             if (insertError.code === '23505' || insertError.message?.includes('duplicate') || insertError.message?.includes('unique')) {
               triggerToast(lang === 'CN' ? "💡 今天已为该角色投过票了，每个角色每天限投1票" : "💡 You have already voted for this character today!");
-              const updatedList = Array.from(new Set([...votedIds, roleId]));
-              setVotedIds(updatedList);
+              const updatedList = Array.from(new Set([...storeState.votedIds, roleId]));
+              updateStore({ votedIds: updatedList });
               localStorage.setItem(`ananta_voted_${clientDateStr}`, JSON.stringify(updatedList));
               return;
             }
@@ -525,7 +569,7 @@ export function VotingWidget() {
       
       processLocalFallbackVote(roleId);
     } finally {
-      setIsVoting(null);
+      updateStore({ isVoting: null });
     }
   };
 
@@ -533,7 +577,7 @@ export function VotingWidget() {
   const maxVotes = roles.length > 0 ? Math.max(...roles.map(r => r.total_votes || 1)) : 1;
 
   // Mobile Top 4 list selector helper
-  const topFour = [...roles].sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0)).slice(0, 4);
+  const topFour = [...roles].slice(0, 4);
 
   return (
     <>
