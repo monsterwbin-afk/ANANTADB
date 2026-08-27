@@ -187,7 +187,7 @@ export function NewsArticlePage({ articleIndex }: { articleIndex: number }) {
   const article = newsData[articleIndex];
   
   const contentIdx = getArticleContentIndex(articleIndex, article);
-  const markdownText = ARTICLES_CONTENT_I18N[lang]?.[contentIdx] || `
+  const markdownText = ARTICLES_CONTENT_I18N[lang]?.[contentIdx] || ARTICLES_CONTENT_I18N['EN']?.[contentIdx] || `
 # Awaiting Decryption
 *Data for this intel file is currently corrupted or missing... Please check back later.*
   `;
