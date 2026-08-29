@@ -81,24 +81,26 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
     : src;
 
   const [videoError, setVideoError] = useState(false);
-  const [currentSrcIndex, setCurrentSrcIndex] = useState(0);
-
-  const fallbackUrls = [
-    'https://www.anantagame.com/2025/0924/b09de7064df692f4abcf0b6483b41290.mp4',
-    'https://www.anantagame.com/2025/0922/e6d6799d3064d53e2f473ea6d83f4179.mp4',
-    'https://www.anantagame.com/2024/1205/04a8d06634d01bf5ff3d2d567cab95b5.mp4'
-  ];
+  const [retryCount, setRetryCount] = useState(0);
 
   const handleVideoError = () => {
-    if (currentSrcIndex < fallbackUrls.length) {
-      setVideoError(true);
-      setCurrentSrcIndex(prev => prev + 1);
+    setVideoError(true);
+    setIsLoading(false);
+  };
+
+  const handleRetry = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setVideoError(false);
+    setIsLoading(true);
+    setRetryCount(prev => prev + 1);
+    const video = videoRef.current;
+    if (video) {
+      video.load();
+      video.play().catch(() => {});
     }
   };
 
-  const activeSrc = videoError && currentSrcIndex > 0 && currentSrcIndex <= fallbackUrls.length
-    ? fallbackUrls[currentSrcIndex - 1]
-    : videoStreamSrc;
+  const activeSrc = videoStreamSrc;
 
   // Sync internal video volume and mute properties with React state
   useEffect(() => {
@@ -112,7 +114,7 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
   // Reset errors when source URL prop changes
   useEffect(() => {
     setVideoError(false);
-    setCurrentSrcIndex(0);
+    setRetryCount(0);
   }, [src]);
 
   // Adjust controls when video source changes
@@ -306,9 +308,35 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
       <div className="absolute inset-0 pointer-events-none opacity-[0.12] z-20 mix-blend-overlay" style={{ backgroundImage: 'linear-gradient(transparent 50%, rgba(0, 0, 0, 0.4) 50%)', backgroundSize: '100% 4px' }}></div>
 
       {/* Spin Loader */}
-      {isLoading && (
+      {isLoading && !videoError && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-30 transition-all">
           <Loader2 className="w-8 h-8 text-ananta-neon animate-spin glow-neon" />
+        </div>
+      )}
+
+      {/* Video Error and Manual Reload HUD */}
+      {videoError && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/85 z-35 p-4 text-center">
+          <p className="text-white text-sm font-mono mb-2">视频加载中断 / Video Stream Loading</p>
+          <p className="text-gray-400 text-xs max-w-sm mb-4">移动端网络或浏览器策略可能限制了自动流化，点击下方按钮重试或直接播放。</p>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleRetry}
+              className="flex items-center gap-1.5 px-4 py-2 bg-ananta-neon text-black font-mono text-xs font-bold uppercase rounded hover:bg-ananta-neon/80 transition-all shadow-[0_0_12px_rgba(0,229,255,0.4)]"
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span>重新加载 / Retry</span>
+            </button>
+            <a
+              href={activeSrc}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-4 py-2 border border-ananta-neon/40 text-ananta-neon font-mono text-xs font-bold uppercase rounded hover:bg-ananta-neon/10 transition-all"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+              <span>原画直达 / Open Stream</span>
+            </a>
+          </div>
         </div>
       )}
 
