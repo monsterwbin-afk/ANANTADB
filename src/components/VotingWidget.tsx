@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 
 // Safe browser Supabase configuration fallback for Static Sites (e.g. GitHub Pages)
-const SBS_URL = (import.meta as any).env?.VITE_SUPABASE_URL || '';
-const SBS_ANON = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY || '';
+const SBS_URL = (import.meta as any).env?.VITE_SUPABASE_URL || (import.meta as any).env?.SUPABASE_URL || '';
+const SBS_ANON = (import.meta as any).env?.VITE_SUPABASE_ANON_KEY || (import.meta as any).env?.SUPABASE_ANON_KEY || '';
 
 let clientSupabase: any = null;
 if (SBS_URL && SBS_ANON && SBS_URL.startsWith('http')) {
@@ -183,10 +183,10 @@ interface VotingStore {
 }
 
 const DEFAULT_ROLES: Role[] = [
-  { id: 'taffy', name: '塔菲', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-tafei_0ed12004.jpg', color: '#eab308', total_votes: 1256 },
-  { id: 'richie', name: '里栖', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-lixi_a69544ea.jpg', color: '#4ade80', total_votes: 942 },
-  { id: 'lykaia', name: '赛墨', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-saimo_d1a180a7.jpg', color: '#ff4d6d', total_votes: 684 },
-  { id: 'captain', name: '队长', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-captain_c7ae1344.jpg', color: '#00e5ff', total_votes: 452 }
+  { id: 'taffy', name: '塔菲', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-tafei_0ed12004.jpg', color: '#eab308', total_votes: 69 },
+  { id: 'richie', name: '里栖', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-lixi_a69544ea.jpg', color: '#4ade80', total_votes: 67 },
+  { id: 'lykaia', name: '赛墨', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-saimo_d1a180a7.jpg', color: '#ff4d6d', total_votes: 45 },
+  { id: 'captain', name: '队长', avatar_url: 'https://www.anantagame.com/pc/gw/20250904162009/assets/role-captain_c7ae1344.jpg', color: '#00e5ff', total_votes: 43 }
 ];
 
 let storeState: VotingStore = {
@@ -195,7 +195,12 @@ let storeState: VotingStore = {
       const cached = localStorage.getItem('ananta_cached_roles');
       if (cached) {
         const parsed = JSON.parse(cached);
-        if (parsed && parsed.length > 0) return parsed;
+        if (parsed && Array.isArray(parsed) && parsed.length > 0) {
+          // Invalidate legacy mock numbers (1256, 942, etc.)
+          const hasLegacyMock = parsed.some((r: any) => (r.total_votes || 0) >= 400 || r.total_votes === 1256 || r.total_votes === 1257);
+          if (!hasLegacyMock) return parsed;
+          localStorage.removeItem('ananta_cached_roles');
+        }
       }
     } catch (_) {}
     return DEFAULT_ROLES;
@@ -280,46 +285,14 @@ export function VotingWidget() {
       if (data && data.success) {
         let mergedRoles = data.roles || [];
         
-        // If the server is in local mode and returns 0 or low votes, merge with client-side cached counts
-        // to protect the user's progress display against ephemeral container wipes/redeployments!
-        if (data.mode === 'local') {
-          try {
-            const cached = localStorage.getItem('ananta_cached_roles');
-            if (cached) {
-              const parsedCached = JSON.parse(cached) as Role[];
-              if (parsedCached && parsedCached.length > 0) {
-                mergedRoles = mergedRoles.map((srvRole: Role) => {
-                  const localRole = parsedCached.find(r => r.id === srvRole.id);
-                  if (localRole) {
-                    return {
-                      ...srvRole,
-                      total_votes: Math.max(srvRole.total_votes || 0, localRole.total_votes || 0)
-                    };
-                  }
-                  return srvRole;
-                });
-              }
-            }
-          } catch (_) {}
-        }
-        
         // Ensure perfect sorting by total_votes descending
-        mergedRoles.sort((a, b) => (b.total_votes || 0) - (a.total_votes || 0));
+        mergedRoles.sort((a: Role, b: Role) => (b.total_votes || 0) - (a.total_votes || 0));
         
         try {
           localStorage.setItem('ananta_cached_roles', JSON.stringify(mergedRoles));
         } catch (_) {}
         
-        let targetTotalVoters = data.totalVoters ?? 0;
-        if (data.mode === 'local') {
-          try {
-            const cachedVoters = localStorage.getItem('ananta_cached_total_voters');
-            if (cachedVoters) {
-              targetTotalVoters = Math.max(targetTotalVoters, parseInt(cachedVoters, 10) || 0);
-            }
-          } catch (_) {}
-        }
-        
+        const targetTotalVoters = data.totalVoters ?? 0;
         try {
           localStorage.setItem('ananta_cached_total_voters', String(targetTotalVoters));
         } catch (_) {}

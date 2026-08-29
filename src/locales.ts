@@ -85,6 +85,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "August 29, 2026",
+        "tag": "MAP REVEAL",
+        "title": "Full World Map Revealed: Ling Yun City & Vast Regions Expand World by 3x!",
+        "desc": "The complete expanded world map has been unveiled! In addition to Nova City, the massive new Ling Yun City and surrounding regions expand the playable world by 3x. View map comparisons, city previews, and new village footage!",
+        "contentIdx": 36,
+        "pinned": true
+      },
+      {
         "date": "August 26, 2026",
         "tag": "OFFICIAL",
         "title": "Official Global Release Date Confirmed: January 15, 2027!",
@@ -607,6 +615,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026 年 8 月 29 日",
+        "tag": "重磅爆料",
+        "title": "完整大地图重磅公开：除新星市外新增凌云城与广袤区域，规模扩大3倍！",
+        "desc": "完整大地图今日正式曝光！除原有的新星市（NOVA CITY）外，新增超大规模都市凌云城（LING YUN CITY）及全新区域，总地图规模达到原有的3倍。抢先查看全图对比、凌云城多角度实景与新村庄实机演示！",
+        "contentIdx": 36,
+        "pinned": true
+      },
       {
         "date": "2026 年 8 月 26 日",
         "tag": "官方公告",
@@ -1131,6 +1147,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026 年 8 月 29 日",
+        "tag": "重磅爆料",
+        "title": "完整大地圖重磅公開：除新星市外新增凌雲城與廣袤區域，規模擴大3倍！",
+        "desc": "完整大地圖今日正式曝光！除原有的新星市（NOVA CITY）外，新增超大規模都市凌雲城（LING YUN CITY）及全新區域，總地圖規模達到原有的3倍。搶先查看全圖對比、凌雲城多角度實景與新村莊實機演示！",
+        "contentIdx": 36,
+        "pinned": true
+      },
+      {
         "date": "2026 年 8 月 26 日",
         "tag": "官方公告",
         "title": "官方確定全球發布時間：2027年1月15日！",
@@ -1653,6 +1677,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年8月29日",
+        "tag": "マップ公開",
+        "title": "完全版ワールドマップ公開：ノバシティに加え巨大都市「凌雲城」が追加、マップ規模は従来の3倍に！",
+        "desc": "完全版全体マップが初公開！従来のノバシティ（Nova City）に加え、超巨大新都市「凌雲城（Ling Yun City）」と広大な新エリアが登場し、全体規模は従来の3倍に拡大。比較画像、凌雲城の多角景観、村落の実機映像をチェック！",
+        "contentIdx": 36,
+        "pinned": true
+      },
       {
         "date": "2026年8月26日",
         "tag": "公式発表",
@@ -2177,6 +2209,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 8월 29일",
+        "tag": "맵 공개",
+        "title": "전체 월드맵 전격 공개: 노바 시티 외 거대 신도시 '링윈 시티' 추가로 맵 규모 3배 확장!",
+        "desc": "완전한 전체 맵이 공개되었습니다! 기존 노바 시티(Nova City)에 더해 훨씬 거대한 규모의 신도시 링윈 시티(Ling Yun City)와 신규 지역이 추가되어 총 면적이 3배로 대폭 확장되었습니다. 고화질 맵 비교 및 신규 마을 실기 영상을 확인하세요!",
+        "contentIdx": 36,
+        "pinned": true
+      },
+      {
         "date": "2026년 8월 26일",
         "tag": "공식 공지",
         "title": "공식 글로벌 출시일 확정: 2027년 1월 15일!",
@@ -2699,6 +2739,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "29. August 2026",
+        "tag": "KARTEN-LEAK",
+        "title": "Vollständige Weltkarte enthüllt: Ling Yun City & neue Regionen vergrößern die Spielwelt um das Dreifache!",
+        "desc": "Die vollständige Open-World-Karte wurde enthüllt! Neben Nova City erweitert die gigantische neue Metropole Ling Yun City das Areal auf das Dreifache. Entdecke detaillierte Kartenvergleiche und Gameplay-Aufnahmen des neuen Dorfes!",
+        "contentIdx": 36,
+        "pinned": true
+      },
       {
         "date": "26. August 2026",
         "tag": "OFFIZIELL",
@@ -3223,6 +3271,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "29 août 2026",
+        "tag": "CARTE DU MONDE",
+        "title": "Carte complète révélée : Ling Yun City et de vastes régions triplent la taille du monde !",
+        "desc": "La carte complète du monde ouvert d'Ananta a été dévoilée ! En plus de Nova City, la gigantesque nouvelle cité de Ling Yun City et des zones inédites triplent l'échelle du jeu. Découvrez les comparaisons, les vues urbaines et le nouveau village en vidéo !",
+        "contentIdx": 36,
+        "pinned": true
+      },
+      {
         "date": "26 août 2026",
         "tag": "OFFICIEL",
         "title": "Date de sortie globale officielle confirmée : 15 janvier 2027 !",
@@ -3746,6 +3802,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "29 agosto 2026",
+        "tag": "MAPPA DEL MONDO",
+        "title": "Mappa completa svelata: Ling Yun City e nuove regioni triplicano l'estensione del mondo!",
+        "desc": "È stata svelata la mappa completa dell'open world! Oltre a Nova City, la colossale nuova metropoli di Ling Yun City e nuove aree triplicano la scala totale del gioco. Scopri i confronti, le immagini e il video del nuovo villaggio!",
+        "contentIdx": 36,
+        "pinned": true
+      },
+      {
         "date": "26 agosto 2026",
         "tag": "UFFICIALE",
         "title": "Data di uscita globale ufficiale confermata: 15 gennaio 2027!",
@@ -4268,6 +4332,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "29 августа 2026 г.",
+        "tag": "КАРТА МИРА",
+        "title": "Полная карта мира раскрыта: Город Линъюнь и новые регионы увеличивают мир в 3 раза!",
+        "desc": "Опубликована полная карта открытого мира Ananta! Помимо Нова-Сити, была представлена колоссальная новая метрополия Линъюнь (Ling Yun City) и новые регионы, что увеличило общую площадь в 3 раза. Смотрите сравнения карт и геймплей деревни!",
+        "contentIdx": 36,
+        "pinned": true
+      },
       {
         "date": "26 августа 2026 г.",
         "tag": "ОФИЦИАЛЬНО",

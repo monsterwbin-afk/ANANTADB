@@ -41,7 +41,7 @@ const CHARACTERS: Record<string, {
     bg: 'https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg',
   },
   yinglong: {
-    image: 'https://www.anantagame.com/2026/0822/677882b05d7f33d20b63e64e1bca33c8.mp4',
+    image: 'https://www.anantagame.com/2026/0824/785d41051835c092af757a5b58cced50.mp4',
     gradientTo: '#0c1c24',
     video: 'https://www.anantagame.com/2025/0924/b09de7064df692f4abcf0b6483b41290.mp4',
     bg: 'https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg',
