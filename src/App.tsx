@@ -14,6 +14,7 @@ import { CharacterPage } from './components/CharacterPage';
 import { ToolkitSection } from './components/Toolkit';
 import { LegalPage } from './components/Legal';
 import { NewsCenterPage, NewsArticlePage } from './components/NewsPage';
+import { BlogPage } from './components/BlogPage';
 import { VotingWidget } from './components/VotingWidget';
 import { SEOManager } from './components/SEOManager';
 
@@ -65,6 +66,9 @@ export default function App() {
     }
     
     if (path && path !== '/') {
+      if (path.startsWith('/blog')) {
+        return '#' + path;
+      }
       if (path.startsWith('/news/article/')) {
         return '#' + path;
       }
@@ -116,20 +120,22 @@ export default function App() {
       const isWiki = newHash.startsWith('#/wiki/characters/');
       const wasNews = currentHash.startsWith('#/news/');
       const isNews = newHash.startsWith('#/news/');
+      const wasBlog = currentHash.startsWith('#/blog') || currentHash.startsWith('#blog');
+      const isBlog = newHash.startsWith('#/blog') || newHash.startsWith('#blog');
       
       const legalHashes = ['#privacy', '#disclaimer', '#terms', '#about'];
       const wasLegal = legalHashes.includes(currentHash);
       const isLegal = legalHashes.includes(newHash);
       
       // Trigger a React state change and re-render if transitioning to/from special pages
-      if (isWiki || wasWiki || isLegal || wasLegal || isNews || wasNews || newHash !== currentHash) {
+      if (isWiki || wasWiki || isLegal || wasLegal || isNews || wasNews || isBlog || wasBlog || newHash !== currentHash) {
         setCurrentHash(newHash);
       }
 
-      if (isWiki || isLegal || isNews) {
+      if (isWiki || isLegal || isNews || isBlog) {
         // Scroll to top
         window.scrollTo(0, 0);
-      } else if (wasWiki || wasLegal || wasNews) {
+      } else if (wasWiki || wasLegal || wasNews || wasBlog) {
         // Leaving special sub-page to a home page section:
         setTimeout(() => {
           const hash = window.location.hash;
@@ -157,6 +163,18 @@ export default function App() {
   }, [currentHash]);
 
   const renderContent = () => {
+    if (currentHash.startsWith('#/blog') || currentHash.startsWith('#blog') || currentHash === '/blog') {
+      const postId = currentHash.includes('/post/') ? currentHash.split('/post/')[1] : undefined;
+      return (
+        <BlogPage 
+          initialPostId={postId}
+          onNavigateHome={() => {
+            window.history.pushState(null, '', '/');
+            window.dispatchEvent(new Event('popstate'));
+          }}
+        />
+      );
+    }
     if (currentHash.startsWith('#/news/article/')) {
       const idxStr = currentHash.replace('#/news/article/', '');
       return <NewsArticlePage articleIndex={parseInt(idxStr) || 0} />;

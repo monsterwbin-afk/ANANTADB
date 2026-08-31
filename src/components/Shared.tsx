@@ -32,6 +32,7 @@ export function Navbar() {
   ];
 
   const menuItems = [
+    { label: t('nav.blog'), href: '#/blog' },
     { label: t('nav.know'), href: '#know' },
     { label: t('nav.news'), href: '#news' },
     { label: t('nav.toolkit'), href: '#toolkit' },
@@ -255,6 +256,7 @@ export function Footer() {
           <h4 className="font-mono text-[0.6rem] tracking-[0.2em] uppercase text-ananta-muted mb-4">{t('sections.footerGuides')}</h4>
           <ul className="list-none space-y-2.5">
             {[
+              { label: t('nav.blog'), href: '#/blog' },
               { label: t('sections.deepdiveTitle'), href: '#know' },
               { label: t('nav.characters'), href: '#characters' },
               { label: t('nav.map'), href: '#map' },

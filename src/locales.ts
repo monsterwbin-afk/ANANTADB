@@ -1,6 +1,7 @@
 export const translations = {
   "EN": {
     "nav": {
+      "blog": "Blog",
       "know": "Know",
       "news": "News",
       "toolkit": "Toolkit",
@@ -532,6 +533,7 @@ export const translations = {
   },
   "CN": {
     "nav": {
+      "blog": "博客",
       "know": "知道",
       "news": "消息",
       "toolkit": "ACD工具箱",
@@ -1063,6 +1065,7 @@ export const translations = {
   },
   "TW": {
     "nav": {
+      "blog": "部落格",
       "know": "知道",
       "news": "訊息",
       "toolkit": "ACD工具箱",
@@ -1594,6 +1597,7 @@ export const translations = {
   },
   "JP": {
     "nav": {
+      "blog": "ブログ",
       "know": "知る",
       "news": "ニュース",
       "toolkit": "ACDツール",
@@ -2125,6 +2129,7 @@ export const translations = {
   },
   "KR": {
     "nav": {
+      "blog": "블로그",
       "know": "알다",
       "news": "소식",
       "toolkit": "ACD 툴킷",
@@ -2656,6 +2661,7 @@ export const translations = {
   },
   "DE": {
     "nav": {
+      "blog": "Blog",
       "know": "Wissen",
       "news": "Nachricht",
       "toolkit": "ACD-Toolkit",
@@ -3187,6 +3193,7 @@ export const translations = {
   },
   "FR": {
     "nav": {
+      "blog": "Blog",
       "know": "Savoir",
       "news": "Nouvelles",
       "toolkit": "ACD Outils",
@@ -3718,6 +3725,7 @@ export const translations = {
   },
   "IT": {
     "nav": {
+      "blog": "Blog",
       "know": "Sapere",
       "news": "Notizia",
       "toolkit": "ACD Strumenti",
@@ -4249,6 +4257,7 @@ export const translations = {
   },
   "RU": {
     "nav": {
+      "blog": "Блог",
       "know": "Знать",
       "news": "Новости",
       "toolkit": "ACD Инструменты",

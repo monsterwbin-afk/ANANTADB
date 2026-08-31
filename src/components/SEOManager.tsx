@@ -60,7 +60,32 @@ export function SEOManager({ currentHash }: SEOManagerProps) {
     description = base.desc;
 
     // Route-specific metadata adjustments
-    if (currentHash === '#/news/all') {
+    if (currentHash.startsWith('#/blog') || currentHash.startsWith('#blog') || currentHash === '/blog') {
+      const blogTitles: Record<string, string> = {
+        EN: 'Captain\'s Blog & Technical Deep Dives',
+        CN: '探员博客 & 深度专栏',
+        TW: '探員部落格 & 深度專欄',
+        JP: '開発日誌・技術ブログ',
+        KR: '대원 블로그 및 심층 칼럼',
+        DE: 'Captain\'s Blog & Technische Analysen',
+        FR: 'Blog du Capitaine & Analyses',
+        IT: 'Blog del Capitano & Approfondimenti',
+        RU: 'Блог Капитана и Технические Статьи'
+      };
+      const blogDescs: Record<string, string> = {
+        EN: 'Official developer logs, traversal physics analyses, ray tracing guides, and combat staggering builds for Ananta by Captain Alex.',
+        CN: '精选《代号：无限大》高阶跑图物理、虚幻引擎性能调优、全角色破韧实测与站长随笔。',
+        TW: '精選《代號：無限大》高階跑圖物理、虛幻引擎性能調優、全角色破韌實測與站長隨筆。',
+        JP: 'Anantaの立体移動物理、120fpsレイトレーシング最適化、おすすめ戦闘ビルドに関する技術ブログ。',
+        KR: '노바 시티 이동 물리 분석, 120 FPS 그래픽 세팅, 전투 빌드 공략 및 개발자의 블로그.',
+        DE: 'Offizielle Entwickler-Logs, Physik-Analysen und Kampf-Builds für Ananta von Captain Alex.',
+        FR: 'Articles techniques, physique de déplacement et builds de combat pour Ananta par le Capitaine Alex.',
+        IT: 'Articoli tecnici, fisica di movimento e build per Ananta a cura del Capitano Alex.',
+        RU: 'Технические статьи, физика передвижения и боевые билды для Ananta от Капитана Алекса.'
+      };
+      title = `${blogTitles[lang] || blogTitles.EN} | ANANTADB`;
+      description = blogDescs[lang] || blogDescs.EN;
+    } else if (currentHash === '#/news/all') {
       const titles: Record<string, string> = {
         EN: 'Latest Intel & News Updates Center',
         CN: '最新情报与更新中心',
