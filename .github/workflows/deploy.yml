@@ -3,14 +3,15 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # 或者是 master 选项，根据你的默认分支名称
+      - main
+      - master
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 限制并发，当有新推送时取消正在运行的部署
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -29,17 +30,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci || npm install
 
       - name: Build Project
-        run: |
-          echo "=== STARTING VITE BUILD ==="
-          npx vite build
-          
-          echo "=== STARTING SERVER BUNDLE ==="
-          npx esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs
+        run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
