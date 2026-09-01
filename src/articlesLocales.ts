@@ -6,6 +6,7 @@ import { krArticles } from './data/articles/kr';
 import { deArticles } from './data/articles/de';
 import { frArticles } from './data/articles/fr';
 import { itArticles } from './data/articles/it';
+import { ruArticles } from './data/articles/ru';
 
 export const ARTICLES_CONTENT_I18N: Record<string, Record<string, string>> = {
   CN: cnArticles,
@@ -16,4 +17,5 @@ export const ARTICLES_CONTENT_I18N: Record<string, Record<string, string>> = {
   DE: deArticles,
   FR: frArticles,
   IT: itArticles,
+  RU: ruArticles,
 };

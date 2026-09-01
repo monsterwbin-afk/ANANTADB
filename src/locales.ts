@@ -86,6 +86,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "September 1, 2026",
+        "tag": "GAMEPLAY",
+        "title": "Outfits & Supercar Customization Drop + Captain's Huangpu River Night Selfie",
+        "desc": "Double gameplay showcase! Explore Captain's stylish outfits, sports car liveries and paint options, alongside a breathtaking selfie by the Huangpu River with dazzling Shanghai city lights.",
+        "contentIdx": 37,
+        "pinned": true
+      },
+      {
         "date": "August 29, 2026",
         "tag": "MAP REVEAL",
         "title": "Full World Map Revealed: Ling Yun City & Vast Regions Expand World by 3x!",
@@ -617,6 +625,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026 年 9 月 1 日",
+        "tag": "实机爆料",
+        "title": "实机重磅实录：多样化服装、跑车与载具涂装展示，黄浦江畔绝美夜景自拍！",
+        "desc": "最新实机双重爆料！全方位展示队长多样化潮酷服装、专属超跑与载具个性化喷漆改装，更有黄浦江畔璀璨夜景灯光下的绝美自拍互动！",
+        "contentIdx": 37,
+        "pinned": true
+      },
       {
         "date": "2026 年 8 月 29 日",
         "tag": "重磅爆料",
@@ -1150,6 +1166,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026 年 9 月 1 日",
+        "tag": "實機爆料",
+        "title": "實機重磅實錄：多樣化服裝、跑車與載具塗裝展示，黃浦江畔絕美夜景自拍！",
+        "desc": "最新實機雙重爆料！全方位展示隊長多樣化潮酷服裝、專屬超跑與載具個性化噴漆改裝，更有黃浦江畔璀璨夜景燈光下的絕美自拍互動！",
+        "contentIdx": 37,
+        "pinned": true
+      },
+      {
         "date": "2026 年 8 月 29 日",
         "tag": "重磅爆料",
         "title": "完整大地圖重磅公開：除新星市外新增凌雲城與廣袤區域，規模擴大3倍！",
@@ -1681,6 +1705,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年9月1日",
+        "tag": "実機映像",
+        "title": "最新実機映像：多彩な衣装＆スポーツカーカスタム塗装、黄浦江ナイトセルフィー！",
+        "desc": "実機プレイ映像2本が一挙公開！キャプテンの多彩な衣装、スーパーカーのカスタムペイントシステム、上海（重霄市）の黄浦江沿いで夜景をバックにしたセルフィーをチェック！",
+        "contentIdx": 37,
+        "pinned": true
+      },
       {
         "date": "2026年8月29日",
         "tag": "マップ公開",
@@ -2214,6 +2246,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 9월 1일",
+        "tag": "실기 영상",
+        "title": "실기 영상 공개: 다양한 코스튬, 슈퍼카 도색 커스텀 & 황푸강 야경 셀카!",
+        "desc": "최신 실기 플레이 영상 2편 공개! 대장의 트렌디한 의상, 슈퍼카 도색 튜닝 시스템과 상하이 황푸강변의 환상적인 야경 셀카 인터랙션을 감상하세요.",
+        "contentIdx": 37,
+        "pinned": true
+      },
+      {
         "date": "2026년 8월 29일",
         "tag": "맵 공개",
         "title": "전체 월드맵 전격 공개: 노바 시티 외 거대 신도시 '링윈 시티' 추가로 맵 규모 3배 확장!",
@@ -2745,6 +2785,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "1. September 2026",
+        "tag": "GAMEPLAY",
+        "title": "Neues Gameplay: Outfits, Sportwagen-Lackierungen & Captains Nacht-Selfie am Huangpu-Fluss",
+        "desc": "Doppelter Gameplay-Einblick! Entdecken Sie Captains modische Outfits, Sportwagen-Lackierungen und ein stimmungsvolles Selfie am Huangpu-Fluss vor beleuchteter Kulisse.",
+        "contentIdx": 37,
+        "pinned": true
+      },
       {
         "date": "29. August 2026",
         "tag": "KARTEN-LEAK",
@@ -3278,6 +3326,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "1er septembre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Aperçu de gameplay : Tenues, personnalisation de sportives & selfie nocturne sur le Huangpu",
+        "desc": "Deux nouveaux extraits de gameplay ! Découvrez la garde-robe du Capitaine, la personnalisation de supercars et un selfie nocturne au bord du fleuve Huangpu à Shanghai.",
+        "contentIdx": 37,
+        "pinned": true
+      },
+      {
         "date": "29 août 2026",
         "tag": "CARTE DU MONDE",
         "title": "Carte complète révélée : Ling Yun City et de vastes régions triplent la taille du monde !",
@@ -3810,6 +3866,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "1 settembre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Nuovo gameplay: Outfit, livree per supercar e selfie notturno del Capitano sul fiume Huangpu",
+        "desc": "Doppia anteprima di gioco! Scopri i look del Capitano, le opzioni di verniciatura per supercar e il suggestivo selfie notturno lungo il fiume Huangpu a Shanghai.",
+        "contentIdx": 37,
+        "pinned": true
+      },
+      {
         "date": "29 agosto 2026",
         "tag": "MAPPA DEL MONDO",
         "title": "Mappa completa svelata: Ling Yun City e nuove regioni triplicano l'estensione del mondo!",
@@ -4341,6 +4405,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "1 сентября 2026 г.",
+        "tag": "ГЕЙМПЛЕЙ",
+        "title": "Новый геймплей: Костюмы, тюнинг спорткаров и ночное селфи Капитана на реке Хуанпу",
+        "desc": "Сразу два новых ролика! Оцените гардероб Капитана, систему кастомизации спорткаров и атмосферное селфи на набережной реки Хуанпу в ночном Шанхае.",
+        "contentIdx": 37,
+        "pinned": true
+      },
       {
         "date": "29 августа 2026 г.",
         "tag": "КАРТА МИРА",
