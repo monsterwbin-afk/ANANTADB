@@ -33,8 +33,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: 'Platforms', value: 'PC · PS5 · iOS · Android' },
         { label: 'Price', value: 'Free to Play' },
         { label: 'Gacha', value: 'NO — Removed' },
-        { label: 'Est. Launch', value: 'Q3 2026' },
-        { label: 'Pre-Registrations', value: '17M+' },
+        { label: 'Est. Launch', value: 'Q1 2027 — Jan 15' },
+        { label: 'Pre-Registrations', value: '22,075,917 (22M+)' },
         { label: 'City Size', value: '~Manhattan' },
         { label: 'Dev Team Size', value: '700–800' },
       ],
@@ -52,12 +52,12 @@ function getDeepDiveSidebarTranslations(lang: string) {
       confirmedFeaturesHeader: '// 已确认特色',
       facts: [
         { label: '开发商', value: '网易 / 飞雨工作室' },
-        { label: '曾用名', value: '代号：无限大' },
+        { label: '项目代号', value: 'Project Mugen' },
         { label: '支持平台', value: 'PC · PS5 · iOS · Android' },
         { label: '售价', value: '免费游玩' },
         { label: '抽卡机制', value: '无 — 已取消' },
-        { label: '预计发售时间', value: '2026年 第三季度' },
-        { label: '全网预约量', value: '突破1700万' },
+        { label: '预计发售时间', value: '2027年 第一季度 — 1月15日' },
+        { label: '全网预约量', value: '22,075,917 (超2200万)' },
         { label: '城市地图体量', value: '约等于真实曼哈顿' },
         { label: '研发团队规模', value: '约 700–800 人' },
       ],
@@ -75,12 +75,12 @@ function getDeepDiveSidebarTranslations(lang: string) {
       confirmedFeaturesHeader: '// 已確認特色',
       facts: [
         { label: '開發商', value: '網易 / 飛雨工作室' },
-        { label: '曾用名', value: '代號：無限大' },
+        { label: '項目代號', value: 'Project Mugen' },
         { label: '支持平台', value: 'PC · PS5 · iOS · Android' },
         { label: '售價', value: '免費遊玩' },
         { label: '抽卡機制', value: '無 — 已取消' },
-        { label: '預計發售時間', value: '2026年 第三季度' },
-        { label: '全網預約量', value: '突破1700萬' },
+        { label: '預計發售時間', value: '2027年 第一季度 — 1月15日' },
+        { label: '全網預約量', value: '22,075,917 (超2200萬)' },
         { label: '城市地圖體量', value: '約等於真實曼哈頓' },
         { label: '研發團隊規模', value: '約 700–800 人' },
       ],
@@ -102,8 +102,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: '対応ハード', value: 'PC · PS5 · iOS · Android' },
         { label: '価格体系', value: '基本プレイ無料' },
         { label: 'ガチャ要素', value: 'なし — 廃止決定' },
-        { label: '発売予定時期', value: '2026年 Q3' },
-        { label: '事前登録者数', value: '1700万人突破' },
+        { label: '発売予定時期', value: '2027年 Q1 — 1月15日' },
+        { label: '事前登録者数', value: '22,075,917人突破' },
         { label: 'マップ規模', value: 'マンハッタン相当' },
         { label: '開発人数', value: '約 700–800 名' },
       ],
@@ -125,8 +125,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: '지원 기기', value: 'PC · PS5 · iOS · Android' },
         { label: '가격 모델', value: '부분 무료화 (F2P)' },
         { label: '가챠 방식', value: '없음 — 폐지됨' },
-        { label: '정식 출시 시기', value: '2026년 3분기 예정' },
-        { label: '사전 예약 수', value: '1700만 돌파' },
+        { label: '정식 출시 시기', value: '2027년 1분기 — 1월 15일 예정' },
+        { label: '사전 예약 수', value: '22,075,917명 돌파' },
         { label: '도시 맵 크기', value: '맨해튼 복제 규격' },
         { label: '개발팀 인원', value: '약 700–800 명' },
       ],
@@ -148,8 +148,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: 'Plattformen', value: 'PC · PS5 · iOS · Android' },
         { label: 'Preis', value: 'Kostenlos (F2P)' },
         { label: 'Gacha', value: 'NEIN — Entfernt' },
-        { label: 'Est. Launch', value: 'Q3 2026' },
-        { label: 'Vorregistrierungen', value: 'Über 17 Mio.' },
+        { label: 'Est. Launch', value: 'Q1 2027 — 15. Jan' },
+        { label: 'Vorregistrierungen', value: '22.075.917 (Über 22 Mio.)' },
         { label: 'Stadtgröße', value: 'Ca. Manhattan-Maßstab' },
         { label: 'Teamgröße', value: '700–800 Personen' },
       ],
@@ -171,8 +171,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: 'Plateformes', value: 'PC · PS5 · iOS · Android' },
         { label: 'Prix', value: 'Gratuit (F2P)' },
         { label: 'Gacha', value: 'NON — Supprimé' },
-        { label: 'Sortie estimée', value: 'T3 2026' },
-        { label: 'Pré-inscriptions', value: '17M+' },
+        { label: 'Sortie estimée', value: 'T1 2027 — 15 Janv' },
+        { label: 'Pré-inscriptions', value: '22 075 917 (22M+)' },
         { label: 'Taille de la ville', value: 'Échelle de Manhattan' },
         { label: 'Nombre de devs', value: '700-800 personnes' },
       ],
@@ -194,8 +194,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: 'Piattaforme', value: 'PC · PS5 · iOS · Android' },
         { label: 'Prezzo', value: 'Gratuito (F2P)' },
         { label: 'Gacha', value: 'NO — Rimosso' },
-        { label: 'Uscita stimata', value: 'Q3 2026' },
-        { label: 'Preregistrazioni', value: 'Oltre 17M' },
+        { label: 'Uscita stimata', value: 'Q1 2027 — 15 Gen' },
+        { label: 'Preregistrazioni', value: '22.075.917 (Oltre 22M)' },
         { label: 'Dimensione mappa', value: 'Scala Manhattan' },
         { label: 'Team di sviluppo', value: '700-800 persone' },
       ],
@@ -217,8 +217,8 @@ function getDeepDiveSidebarTranslations(lang: string) {
         { label: 'Платформы', value: 'PC · PS5 · iOS · Android' },
         { label: 'Цена', value: 'Бесплатно (F2P)' },
         { label: 'Гача система', value: 'НЕТ — Удалена' },
-        { label: 'Планируемый релиз', value: 'Q3 2026' },
-        { label: 'Предрегистрации', value: '17 млн+' },
+        { label: 'Планируемый релиз', value: 'Q1 2027 — 15 янв' },
+        { label: 'Предрегистрации', value: '22 075 917 (22 млн+)' },
         { label: 'Размер города', value: 'Масштаб Манхэттена' },
         { label: 'Штат разработчиков', value: '700–800 чел.' },
       ],
@@ -239,13 +239,13 @@ function getDeepDiveSidebarTranslations(lang: string) {
 function getValueClass(value: string, label?: string) {
   const v = value.toLowerCase();
   const l = label ? label.toLowerCase() : '';
-  if (v.includes('✓') || v.includes('yes') || v.includes('confirmed') || v.includes('17m') || v.includes('1700万') || v.includes('17 mil') || v.includes('17 млн')) {
+  if (v.includes('✓') || v.includes('yes') || v.includes('confirmed') || v.includes('17m') || v.includes('1700万') || v.includes('17 mil') || v.includes('17 млн') || v.includes('22m') || v.includes('22,075,917') || v.includes('2200万') || v.includes('2200萬') || v.includes('22 млн')) {
     return "text-ananta-neon glow-neon";
   }
   if (v.includes('✗') || v.includes('no') || v.includes('removed') || v.includes('없음') || v.includes('폐지') || v.includes('无') || v.includes('取消') || v.includes('なし') || v.includes('廃止') || v.includes('nein') || v.includes('entfernt') || v.includes('non') || v.includes('retiré') || v.includes('supprimé') || v.includes('нет') || v.includes('удален')) {
     return "text-ananta-neon2";
   }
-  if (v.includes('q3 2026') || v.includes('2026년') || v.includes('2026年')) {
+  if (v.includes('2027') || v.includes('2026')) {
     return "text-ananta-gold";
   }
   if (l.includes('platform') || l.includes('preis') || l.includes('price') || l.includes('售价') || l.includes('價格') || l.includes('価格') || l.includes('가격') || l.includes('지원 기기')) {

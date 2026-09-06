@@ -15,6 +15,7 @@ import { ToolkitSection } from './components/Toolkit';
 import { LegalPage } from './components/Legal';
 import { NewsCenterPage, NewsArticlePage } from './components/NewsPage';
 import { BlogPage } from './components/BlogPage';
+import { BlogWidget } from './components/BlogWidget';
 import { VotingWidget } from './components/VotingWidget';
 import { SEOManager } from './components/SEOManager';
 
@@ -35,12 +36,13 @@ function Home() {
             <VotingWidget />
           </div>
 
-          <DeepDive />
-          <ToolkitSection />
           <Characters />
           <MapSection />
-          <CodesSection />
+          <ToolkitSection />
+          <BlogWidget />
+          <DeepDive />
           <CompareSection />
+          <CodesSection />
           <FAQSection />
           <SystemRequirements />
           <TrackerSection />

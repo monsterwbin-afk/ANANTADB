@@ -313,21 +313,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "World & Setting",
-        "title": "Nova City: A Living Breathing Metropolis",
-        "desc": "Ananta takes place in Nova City, a sprawling urban environment where magic and anomalies coexist with modern technology. The map features seamless traversal with no loading screens between districts, allowing players to swing, run up walls, and drive vehicles anywhere."
+        "title": "Nova City & Chongxiao: A Seamless Urban Sandbox",
+        "desc": "Ananta takes place in breathtaking modern metropolises like Nova City and Chongxiao, where magic and 'Chaos' anomalies coexist with high-tech urban life. The entire map features seamless traversal with zero loading screens between districts, allowing players to swing, wall-run, and drive modified vehicles anywhere."
       },
       {
         "tag": "Combat System",
-        "title": "Fast-Paced Synergistic Action",
-        "desc": "Combat revolves around a 4-character party system. Each character has a basic attack, skill, and ultimate. The core mechanic is utilizing environmental objects (like throwing cars via telekinesis) and syncing elemental combos to break enemy shields."
+        "title": "Fast-Paced 4-Agent Synergistic Combat",
+        "desc": "Combat revolves around a highly dynamic 4-character party system. Each character features basic attacks, unique skills, and ultimate abilities. The core mechanic emphasizes physical environmental interactions (such as using telekinesis to throw cars or street structures) and syncing elemental combos to break Chaos shields."
       },
       {
         "tag": "Traversal",
-        "title": "Next-Gen Movement Mechanics",
-        "desc": "Movement is a core pillar. Characters can run up skyscrapers without stamina constraints. Grappling hooks, vehicles, and unique traversal skills (like Taffy motorcycle) make exploring Nova City incredibly fluid and fast."
+        "title": "Next-Gen Extreme Urban Traversal",
+        "desc": "Movement is the absolute core pillar. Agents can run up vertical skyscrapers without any stamina bar constraints. Utilizing high-velocity grappling hooks, parkour, and character-specific traversal skills (like Taffi's hammer transforming into a rideable scooter) makes exploring the cities incredibly fluid and exhilarating."
       }
     ],
     "charactersData": [
@@ -451,7 +451,7 @@ export const translations = {
       },
       "note": "* Note: Hardware configurations are based on pre-release public playtests and may be subject to optimization."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "AUG 2023",
         "title": "Announced at Gamescom",
@@ -468,19 +468,19 @@ export const translations = {
         "desc": "Closed beta test held in specific regions."
       },
       {
-        "date": "Q3 2026",
-        "title": "Estimated Global Launch",
-        "desc": "Expected release on PC, PS5, iOS, and Android."
+        "date": "Q1 2027",
+        "title": "Global Launch — Jan 15",
+        "desc": "Official launch on PC, PS5, iOS, and Android."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "Is Ananta a gacha game?",
         "a": "No, there is no character gacha. Characters are unlocked through story progression. Monetization is purely cosmetics."
       },
       {
         "q": "When is the release date?",
-        "a": "The currently estimated release window is Q3 2026. Pre-registration is open."
+        "a": "The official global release date is confirmed for January 15, 2027 (Q1 2027). Pre-registration is open."
       },
       {
         "q": "Is Project Mugen the same as Ananta?",
@@ -497,7 +497,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1,000x Credits, 5x Break mats",
         "status": "Active at Launch"
       },
@@ -853,21 +853,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "世界与环境",
-        "title": "新星城：一座充满活力的大都市",
-        "desc": "《代号：无限大》的故事发生在新星城，这是一个庞大的城市环境，魔法、异常现象与现代技术共存。"
+        "title": "新启市与重霄市：无缝衔接的繁华都市",
+        "desc": "《无限大》的故事发生在新启市与重霄市等现代大都市中，这里魔法、混厄超自然现象与现代科技并存。整个大世界地图实现无缝穿梭，区域间零加载时间，玩家可以随时在摩天大楼间摆荡、飞檐走壁，甚至驾驶各种改装载具任意驰骋。"
       },
       {
         "tag": "战斗系统",
-        "title": "快节奏的协同行动",
-        "desc": "战斗围绕 4 角色队伍系统展开。"
+        "title": "快节奏的4人协同即时战斗",
+        "desc": "战斗围绕独创的4人小队系统展开，每个角色具备普攻、战技与终极奥义。核心机制强调场景深度交互（如使用心灵遥感抛掷路边车辆或垃圾桶砸向敌人）以及多属性元素连携，以此快速削减并击碎敌人的混厄护盾。"
       },
       {
-        "tag": "遍历",
-        "title": "下一代运动机制",
-        "desc": "运动是核心支柱。"
+        "tag": "动作遍历",
+        "title": "下一代城市超极限机动",
+        "desc": "动作遍历是游戏的核心支柱。角色可以在毫无体力槽限制的情况下垂直跑上数百米高的摩天大楼。利用抓钩摆荡、跑酷爬墙以及每个角色的专属机动技能（如塔菲的滑板摩托锤），让城市探索变得无比丝滑与畅快。"
       }
     ],
     "charactersData": [
@@ -991,7 +991,7 @@ export const translations = {
       },
       "note": "* 基于测试数据，以发售时为准。"
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "2023 年 8 月",
         "title": "在科隆游戏展上宣布",
@@ -1008,19 +1008,19 @@ export const translations = {
         "desc": "在特定地区进行内测。"
       },
       {
-        "date": "2026 年第三季度",
-        "title": "预计全球发布",
-        "desc": "预计在 PC、PS5、iOS 和 Android 上发布。"
+        "date": "2027 年第一季度",
+        "title": "全球正式公测 — 1 月 15 日",
+        "desc": "正式上线 PC、PS5、iOS 和 Android 平台。"
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "代号：无限大 是抽卡游戏吗？",
         "a": "不，没有角色抽卡系统。角色通过主线剧情解锁，付费内容仅为外观皮肤。"
       },
       {
         "q": "公测上线日期是什么时候？",
-        "a": "目前预计发布时间为 2026 年第三季度。预注册现已开放。"
+        "a": "官方已正式确认将于 2027 年 1 月 15 日（2027 年第一季度）开启全球公测。预注册现已全面开放。"
       },
       {
         "q": "Project Mugen 和 Ananta 一样吗？",
@@ -1037,7 +1037,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1,000x 积分，5x 休息垫",
         "status": "启动时活跃"
       },
@@ -1393,21 +1393,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "世界與環境",
-        "title": "新星城：一座充滿活力的大都市",
-        "desc": "遊玩故事發生在新星城，這是一個龐大的現代都市，魔法、異常現象與現代科技共存。大世界地圖主打無縫穿越，各大區域之間沒有載入讀取介面，允許玩家隨時隨地擺盪、飛簷走壁和駕駛載具。"
+        "title": "新啟市與重霄市：無縫銜接的繁華都市",
+        "desc": "《無限大》的故事發生在新啟市與重霄市等現代大都市中，這裡魔法、混厄超自然現象與現代科技並存。整個大世界地圖實現無縫穿梭，區域間零載入時間，玩家可以隨時在摩天大樓間擺盪、飛簷走壁，甚至駕駛各種改裝載具任意馳騁。"
       },
       {
         "tag": "戰鬥系統",
-        "title": "快節奏的協同行動",
-        "desc": "戰鬥圍繞著 4 角色隊伍系統。每個角色都有基本攻擊、技能和終極技能。核心機制是利用環境物體（例如透過心靈遙感投擲汽車）並同步元素組合來打破敵人的護盾。"
+        "title": "快節奏的4人協同即時戰鬥",
+        "desc": "戰鬥圍繞獨創的4人小隊系統展開，每個角色具備普攻、戰技與終極奧義。核心機制強調場景深度交互（如使用心靈遙感拋擲路邊車輛或垃圾桶砸向敵人）以及多屬性元素連攜，以此快速削減並擊碎敵人的混厄護盾。"
       },
       {
-        "tag": "遍歷",
-        "title": "下一代運動機制",
-        "desc": "運動是核心支柱。角色可以在沒有體力限制的情況下跑上摩天大樓。抓鉤、車輛和獨特的穿越技能（如塔菲摩托車）使探索新星城變得異常流暢和快速。"
+        "tag": "動作遍歷",
+        "title": "下一代城市超極限機動",
+        "desc": "動作遍歷是遊戲的核心支柱。角色可以在毫無體力槽限制的情況下垂直跑上數百米高的摩天大樓。利用抓鉤擺盪、跑酷爬牆以及每個角色的專屬機動技能（如塔菲的滑板摩托錘），讓城市探索變得無比絲滑與暢快。"
       }
     ],
     "charactersData": [
@@ -1531,7 +1531,7 @@ export const translations = {
       },
       "note": "* 基於測試數據，以發售時為准。"
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "2023 年 8 月",
         "title": "在科隆遊戲展上宣布",
@@ -1548,19 +1548,19 @@ export const translations = {
         "desc": "在特定地區進行內測。"
       },
       {
-        "date": "2026 年第三季度",
-        "title": "預計全球發布",
-        "desc": "預計在 PC、PS5、iOS 和 Android 上發布。"
+        "date": "2027 年第一季度",
+        "title": "全球正式公測 — 1 月 15 日",
+        "desc": "正式上線 PC、PS5、iOS 和 Android 平台。"
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "代號：無限大 是抽卡遊戲嗎？",
         "a": "不，沒有角色抽卡。角色透過故事進度解鎖。貨幣化純粹是化妝品。"
       },
       {
         "q": "公測上線日期是什麼時候？",
-        "a": "目前預計發佈時間為 2026 年第三季。預註冊現已開放。"
+        "a": "官方已正式確認將於 2027 年 1 月 15 日（2027 年第一季度）開啟全球公測。預註冊現已全面開放。"
       },
       {
         "q": "Project Mugen 和 Ananta 一樣嗎？",
@@ -1577,7 +1577,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1,000x 積分，5x 休息墊",
         "status": "啟動時活躍"
       },
@@ -1933,21 +1933,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "世界観と設定",
-        "title": "ノバシティ: 生き生きとした大都市",
-        "desc": "アナンタは、魔法と異常が現代のテクノロジーと共存する広大な都市環境であるノヴァシティで行われます。"
+        "title": "新啓市と重霄市：シームレスな大都市サンドボックス",
+        "desc": "『無限大』は、魔法と超自然現象「混厄」が現代技術と共存する、新啓市（ノヴァシティ）や重霄市（チョンシャオ）などの広大な現代都市を舞台にしています。エリア間のローディングは一切なく、高層ビルの間をスイングし、壁を走り、カスタム車両で自由に駆け抜けることができます。"
       },
       {
         "tag": "戦闘システム",
-        "title": "ペースの速い相乗効果",
-        "desc": "戦闘は4人のキャラクターのパーティーシステムを中心に展開します。"
+        "title": "ハイスピードな4人編成シナジーバトル",
+        "desc": "戦闘は4人編成のリアルタイムパーティーシステムを中心に展開します。各キャラクターは通常攻撃、スキル、必殺技を持ち、周囲の環境オブジェクト（念力で車やゴミ箱を投げつける等）を利用した相互作用や、元素連繋によって敵の混厄シールドを破壊する戦略性が核心です。"
       },
       {
         "tag": "トラバーサル",
-        "title": "次世代の動作メカニズム",
-        "desc": "運動は核となる柱です。"
+        "title": "次世代の都市型極限アクション",
+        "desc": "移動（トラバーサル）は本作の最重要要素です。キャラクターはスタミナ制限なしで高層ビルを垂直に駆け上がることができます。グラップリングフック、アクロバティックなパルクール、そして各キャラ固有の移動スキル（タフィのバイク変形大槌など）が、驚くほど爽快で滑らかな探索を実現します。"
       }
     ],
     "charactersData": [
@@ -2071,7 +2071,7 @@ export const translations = {
       },
       "note": "* 注意：システム要件は事前テストのデータに基づいており、最終リリースに向けて最適化される可能性があります。"
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "2023 年 8 月",
         "title": "ゲームズコムで発表",
@@ -2088,19 +2088,19 @@ export const translations = {
         "desc": "クローズドβテストを特定地域で開催。"
       },
       {
-        "date": "2026 年第 3 四半期",
-        "title": "世界的な発売予定",
-        "desc": "PC、PS5、iOS、Androidでのリリースが予定されています。"
+        "date": "2027 年第 1 四반기",
+        "title": "世界同時正式サービス開始 — 1月15日",
+        "desc": "PC、PS5、iOS、Android プラットフォームで正式にリリースされます。"
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "アナンタってガチャゲーですか？",
         "a": "いいえ、キャラクターガチャはありません。"
       },
       {
         "q": "発売日はいつですか？",
-        "a": "現在リリース予定時期は 2026 年第 3 四半期です。事前登録は受付中です。"
+        "a": "公式リリース日は 2027 年 1 月 15 日（2027 年第 1 四半期）に正式決定しました。事前登録は受付中です。"
       },
       {
         "q": "Project Mugenはアナンタと同じですか?",
@@ -2117,7 +2117,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1,000x クレジット、5x ブレイクマット",
         "status": "起動時にアクティブ"
       },
@@ -2473,21 +2473,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "세계와 환경",
-        "title": "Nova City: 살아 숨 쉬는 대도시",
-        "desc": "Ananta는 마법과 변칙성이 현대 기술과 공존하는 거대한 도시 환경인 Nova City에서 열립니다. "
+        "title": "신계시와 중소시: 로딩 없는 심리스 어반 샌드박스",
+        "desc": "《무한대》는 마법과 초자연적 '혼액' 현상이 하이테크 현대 문명과 공존하는 신계시(노바 시티) 및 중소시(重霄市)를 무대로 합니다. 대도시 맵 전체가 완벽한 심리스 구조로 구역 간 로딩이 전혀 없으며, 고층 빌딩 사이를 매달려 날아다니고 벽을 타며 개조 차량으로 질주할 수 있습니다."
       },
       {
         "tag": "전투 시스템",
-        "title": "빠르게 진행되는 시너지 액션",
-        "desc": "전투는 4인 파티 시스템을 중심으로 진행됩니다. "
+        "title": "스피디한 4인 캐릭터 시너지 연계 전투",
+        "desc": "전투는 독창적인 4인 캐릭터 태그 시스템을 중심으로 진행됩니다. 각 캐릭터는 일반 공격, 고유 스킬, 필살기를 보유하고 있으며, 염력으로 길거리의 자동차나 구조물을 던져 공격하는 환경 상호작용과 다채로운 원소 콤보를 조합해 적의 혼액 보호막을 신속하게 파괴하는 메커니즘을 자랑합니다."
       },
       {
-        "tag": "순회",
-        "title": "차세대 무브먼트 메커니즘",
-        "desc": "움직임은 핵심 기둥입니다. "
+        "tag": "순회 액션",
+        "title": "차세대 하이퍼 도시형 익스트림 무브먼트",
+        "desc": "이동(순회) 액션은 무한대의 가장 강력한 핵심 기둥입니다. 캐릭터들은 스태미나 제한 없이 고층 빌딩 벽을 수직으로 한계 없이 달릴 수 있으며, 초고속 와이어 후크, 어반 파르쿠르, 캐릭터 전용 이동 스킬(예: 바이크로 변신하는 타피의 대형 망치)을 지원해 탐험의 재미를 극대화했습니다."
       }
     ],
     "charactersData": [
@@ -2611,7 +2611,7 @@ export const translations = {
       },
       "note": "* 참고: 시스템 사양은 사전 테스트의 사양을 기반으로 하며, 최종 발매 시 변경될 수 있습니다."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "2023년 8월",
         "title": "게임스컴에서 발표",
@@ -2628,19 +2628,19 @@ export const translations = {
         "desc": "특정 지역에서 비공개 베타 테스트가 진행됩니다."
       },
       {
-        "date": "2026년 3분기",
-        "title": "예상 글로벌 출시",
-        "desc": "PC, PS5, iOS, Android에서 출시될 예정입니다."
+        "date": "2027년 1분기",
+        "title": "글로벌 정식 출시 — 1월 15일",
+        "desc": "PC, PS5, iOS, Android 플랫폼에서 정식으로 서비스가 시작됩니다."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "아난타는 가챠게임인가요?",
         "a": "아니요, 캐릭터 가챠는 없습니다. "
       },
       {
         "q": "출시일은 언제인가요?",
-        "a": "현재 예상 출시 기간은 2026년 3분기입니다. 사전 등록이 진행 중입니다."
+        "a": "공식 글로벌 출시일은 2027년 1분기인 1월 15일로 최종 확정되었습니다. 사전 등록이 활발히 진행 중입니다."
       },
       {
         "q": "Project Mugen은 Ananta와 동일합니까?",
@@ -2657,7 +2657,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1,000x 크레딧, 5x 브레이크 매트",
         "status": "출시 시 활성"
       },
@@ -3013,21 +3013,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "Welt & Umgebung",
-        "title": "Nova City: Eine lebendige, atmende Metropole",
-        "desc": "Ananta spielt in Nova City, einer weitläufigen städtischen Umgebung, in der Magie und Anomalien mit moderner Technologie koexistieren. "
+        "title": "Nova City & Chongxiao: Nahtlose urbane Sandbox",
+        "desc": "Ananta spielt in atemberaubenden modernen Metropolen wie Nova City und Chongxiao, in denen Magie und übernatürliche 'Chaos'-Anomalien mit High-Tech-Leben koexistieren. Die gesamte Karte bietet nahtlose Bewegung ohne Ladebildschirme zwischen den Bezirken, sodass Spieler schwingen, Wände hochrennen und modifizierte Fahrzeuge überall steuern können."
       },
       {
         "tag": "Kampfsystem",
-        "title": "Rasante synergistische Aktion",
-        "desc": "Der Kampf dreht sich um ein 4-Charakter-Gruppensystem. "
+        "title": "Rasantes synergistisches 4-Agenten-Echtzeitkampf",
+        "desc": "Der Kampf dreht sich um ein hochdynamisches 4-Charakter-Gruppensystem. Jeder Charakter verfügt über Standardangriffe, einzigartige Fähigkeiten und ultimative Kräfte. Die Kernmechanik betont physikalische Interaktionen (wie das Werfen von Autos per Telekinese) und das Kombinieren von Elementen, um Chaos-Schilde zu brechen."
       },
       {
-        "tag": "Durchquerung",
-        "title": "Bewegungsmechanik der nächsten Generation",
-        "desc": "Bewegung ist eine tragende Säule. "
+        "tag": "Fortbewegung",
+        "title": "Extrem-Fortbewegung der nächsten Generation",
+        "desc": "Bewegung ist die tragende Säule. Agenten können Wolkenkratzer ohne Ausdauerbeschränkungen vertikal hinauflaufen. Hochgeschwindigkeits-Greifhaken, Parkour und charakterspezifische Fähigkeiten (wie Taffis Hammer, der sich in einen fahrbaren Roller verwandelt) machen das Erkunden der Städte unglaublich flüssig und berauschend."
       }
     ],
     "charactersData": [
@@ -3151,7 +3151,7 @@ export const translations = {
       },
       "note": "* Hinweis: Die Systemanforderungen basieren auf vorläufigen Entwicklungsdaten und können bis zum finalen Release optimiert werden."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "AUGUST 2023",
         "title": "Angekündigt auf der Gamescom",
@@ -3168,23 +3168,23 @@ export const translations = {
         "desc": "Geschlossener Betatest in bestimmten Regionen."
       },
       {
-        "date": "Q3 2026",
-        "title": "Voraussichtlicher weltweiter Start",
-        "desc": "Voraussichtliche Veröffentlichung auf PC, PS5, iOS und Android."
+        "date": "Q1 2027",
+        "title": "Globaler Start — 15. Jan.",
+        "desc": "Offizielle Veröffentlichung auf PC, PS5, iOS und Android."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "Ist Ananta ein Gacha-Spiel?",
         "a": "Nein, es gibt kein Charakter-Gacha. "
       },
       {
         "q": "Wann ist das Erscheinungsdatum?",
-        "a": "Das derzeit geschätzte Veröffentlichungsfenster ist das dritte Quartal 2026. Die Vorregistrierung ist offen."
+        "a": "Das offizielle Veröffentlichungsdatum wurde für den 15. Januar 2027 (Q1 2027) bestätigt. Die Vorregistrierung ist offen."
       },
       {
         "q": "Ist Project Mugen dasselbe wie Ananta?",
-        "a": "Ja, Project Mugen war der Arbeitstitel. "
+        "a": "Ja, Project Mugen war der Arbeitstitel. NetEase renamed it to Ananta in late 2024."
       },
       {
         "q": "Hat Ananta Multiplayer?",
@@ -3197,7 +3197,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1.000x Credits, 5x Pausenmatten",
         "status": "Aktiv beim Start"
       },
@@ -3553,21 +3553,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "Monde et décor",
-        "title": "Nova City : une métropole vivante et respirante",
-        "desc": "Ananta se déroule à Nova City, un environnement urbain tentaculaire où la magie et les anomalies coexistent avec la technologie moderne. "
+        "title": "Nova City & Chongxiao : Un bac à sable urbain sans couture",
+        "desc": "Ananta se déroule dans de splendides métropoles modernes comme Nova City et Chongxiao, où la magie et les anomalies du 'Chaos' coexistent avec la haute technologie. Toute la carte se traverse sans aucun écran de chargement entre les quartiers, permettant de se balancer, de courir sur les murs et de piloter des véhicules modifiés partout."
       },
       {
         "tag": "Système de combat",
-        "title": "Action synergique rapide",
-        "desc": "Le combat s'articule autour d'un système de groupe à 4 personnages. "
+        "title": "Combat synergique rapide à 4 agents",
+        "desc": "Le combat repose sur un système dynamique d'équipe de 4 personnages. Chacun dispose d'attaques de base, de compétences uniques et de capacités ultimes. La mécanique principale met l'accent sur les interactions physiques (comme projeter des voitures par télékinésie) et la synergie élémentaire pour briser les boucliers du Chaos."
       },
       {
         "tag": "Traversée",
-        "title": "Mécanique du mouvement de nouvelle génération",
-        "desc": "Le mouvement est un pilier essentiel. "
+        "title": "Déplacements extrêmes urbains de nouvelle génération",
+        "desc": "La liberté de mouvement est le pilier absolu. Les agents peuvent courir verticalement sur les gratte-ciels sans aucune limite d'endurance. Grâce à des grappins ultra-rapides, au parkour et à des compétences de déplacement uniques (comme le marteau-scooter de Taffi), l'exploration des villes devient incroyablement fluide et grisante."
       }
     ],
     "charactersData": [
@@ -3691,7 +3691,7 @@ export const translations = {
       },
       "note": "* Remarque : Les configurations requises sont basées sur des données préliminaires de développement et peuvent être optimisées."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "AOÛT 2023",
         "title": "Annoncé à la Gamescom",
@@ -3708,19 +3708,19 @@ export const translations = {
         "desc": "Test bêta fermé organisé dans des régions spécifiques."
       },
       {
-        "date": "T3 2026",
-        "title": "Lancement mondial estimé",
-        "desc": "Sortie prévue sur PC, PS5, iOS et Android."
+        "date": "T1 2027",
+        "title": "Lancement mondial — 15 janv.",
+        "desc": "Sortie officielle sur PC, PS5, iOS et Android."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "Ananta est-il un jeu gacha ?",
         "a": "Non, il n’y a pas de gacha de personnage. "
       },
       {
         "q": "Quelle est la date de sortie ?",
-        "a": "La fenêtre de sortie actuellement estimée est le troisième trimestre 2026. Les préinscriptions sont ouvertes."
+        "a": "La date de sortie mondiale officielle est confirmée pour le 15 janvier 2027 (T1 2027). Les préinscriptions sont ouvertes."
       },
       {
         "q": "Le projet Mugen est-il le même qu’Ananta ?",
@@ -3737,7 +3737,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1 000x crédits, 5x tapis de pause",
         "status": "Actif au lancement"
       },
@@ -4093,21 +4093,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "Mondo e ambientazione",
-        "title": "Nova City: una metropoli che respira vivente",
-        "desc": "Ananta è ambientato a Nova City, un vasto ambiente urbano dove magia e anomalie convivono con la tecnologia moderna. "
+        "title": "Nova City & Chongxiao: Una Sandbox Urbana Senza Soluzione di Continuità",
+        "desc": "Ananta si svolge in meravigliose metropoli moderne come Nova City e Chongxiao, in cui magia e anomalie del 'Caos' coesistono con la vita ad alta tecnologia. L'intera mappa offre un'esplorazione fluida senza schermate di caricamento tra i distretti, consentendo di dondolarsi, correre sui muri e guidare veicoli modificati ovunque."
       },
       {
         "tag": "Sistema di combattimento",
-        "title": "Azione sinergica dal ritmo serrato",
-        "desc": "Il combattimento ruota attorno a un sistema di party a 4 personaggi. "
+        "title": "Combattimento sinergico in tempo reale a 4 agenti",
+        "desc": "Il combattimento ruota attorno a un sistema dinamico di squadra a 4 personaggi. Ogni agente ha attacchi base, abilità uniche e mosse supreme. La meccanica principale enfatizza le interazioni fisiche con l'ambiente (come lanciare auto con la telecinesi) e combinazioni elementali per spezzare gli scudi del Caos."
       },
       {
-        "tag": "Traversata",
-        "title": "Meccanica del movimento di nuova generazione",
-        "desc": "Il movimento è un pilastro fondamentale. "
+        "tag": "Esplorazione",
+        "title": "Movimento estremo urbano di nuova generazione",
+        "desc": "Il movimento è il pilastro centrale. Gli agenti possono correre verticalmente sui grattacieli senza limiti di resistenza. L'uso di rampini ad alta velocità, parkour e abilità di movimento specifiche (come il martello di Taffi che diventa uno scooter guidabile) rende l'esplorazione delle città incredibilmente fluida ed entusiasmante."
       }
     ],
     "charactersData": [
@@ -4231,7 +4231,7 @@ export const translations = {
       },
       "note": "* Nota: I requisiti hardware si basano sui dati delle versioni di prova e potrebbero variare dopo l'ottimizzazione."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "AGOSTO 2023",
         "title": "Annunciato alla Gamescom",
@@ -4248,19 +4248,19 @@ export const translations = {
         "desc": "Test beta chiuso tenuto in regioni specifiche."
       },
       {
-        "date": "Terzo trimestre 2026",
-        "title": "Lancio globale stimato",
-        "desc": "Rilascio previsto su PC, PS5, iOS e Android."
+        "date": "Q1 2027",
+        "title": "Lancio globale — 15 gen.",
+        "desc": "Rilascio ufficiale su PC, PS5, iOS e Android."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "Ananta è un gioco gacha?",
         "a": "No, non esiste un gacha di personaggi. "
       },
       {
         "q": "Quando è la data di uscita?",
-        "a": "La finestra di rilascio attualmente stimata è il terzo trimestre del 2026. La preregistrazione è aperta."
+        "a": "La data di uscita globale ufficiale è confermata per il 15 gennaio 2027 (Q1 2027). La preregistrazione è aperta."
       },
       {
         "q": "Il Progetto Mugen è uguale ad Ananta?",
@@ -4277,7 +4277,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1.000 crediti, 5 tappetini pausa",
         "status": "Attivo al lancio"
       },
@@ -4633,21 +4633,21 @@ export const translations = {
         "contentIdx": 25
       }
     ],
-    "deepDiveData": [
+        "deepDiveData": [
       {
         "tag": "Мир и обстановка",
-        "title": "Нова-Сити: живой дышащий мегаполис",
-        "desc": "Действие Ананты происходит в Нова-Сити, обширной городской среде, где магия и аномалии сосуществуют с современными технологиями. "
+        "title": "Нова-Сити и Чунсяо: Бесшовный городской песочник",
+        "desc": "Действие Ananta разворачивается в потрясающих современных мегаполисах, таких как Нова-Сити и Чунсяо, где магия и аномалии 'Хаоса' сосуществуют с высокими технологиями. Вся карта исследуется абсолютно бесшовно без экранов загрузки между районами, позволяя раскачиваться, бегать по стенам и водить модифицированный транспорт."
       },
       {
         "tag": "Боевая система",
-        "title": "Быстрое синергетическое действие",
-        "desc": "Бой вращается вокруг партийной системы из 4 персонажей. "
+        "title": "Динамичные сражения отряда из 4 агентов в реальном времени",
+        "desc": "Боевая система завязана на динамичном переключении между 4 персонажами. У каждого есть базовые удары, уникальные навыки и суперспособности. Ключевая механика делает акцент на интерактивном окружении (например, швыряние машин телекинезом) и комбинировании стихий для пробития щитов Хаоса."
       },
       {
-        "tag": "Обход",
-        "title": "Механика движения нового поколения",
-        "desc": "Движение – это основная опора. "
+        "tag": "Обход и паркур",
+        "title": "Экстремальное городское перемещение нового поколения",
+        "desc": "Свобода перемещения — главная опора игры. Агенты могут взбегать по вертикальным небоскребам без каких-либо ограничений на выносливость. Благодаря скоростным крюкам-кошкам, паркуру и уникальным навыкам (вроде молота Таффи, превращающегося в мотороллер), исследование городов дарит непередаваемый драйв."
       }
     ],
     "charactersData": [
@@ -4771,7 +4771,7 @@ export const translations = {
       },
       "note": "* Примечание: Системные требования основаны на предварительных данных тестирования и могут быть изменены после оптимизации."
     },
-    "trackerData": [
+        "trackerData": [
       {
         "date": "АВГУСТ 2023 ГОДА",
         "title": "Анонсировано на Gamescom",
@@ -4788,19 +4788,19 @@ export const translations = {
         "desc": "Закрытое бета-тестирование проводится в отдельных регионах."
       },
       {
-        "date": "3 квартал 2026 г.",
-        "title": "Предполагаемый глобальный запуск",
-        "desc": "Ожидаемый релиз на ПК, PS5, iOS и Android."
+        "date": "Q1 2027 г.",
+        "title": "Глобальный запуск — 15 янв.",
+        "desc": "Официальный релиз на ПК, PS5, iOS и Android."
       }
     ],
-    "faqData": [
+        "faqData": [
       {
         "q": "Ананта — это гача-игра?",
         "a": "Нет, гача персонажа нет. "
       },
       {
         "q": "Когда дата релиза?",
-        "a": "Предполагаемое окно выпуска на данный момент — третий квартал 2026 года. Предварительная регистрация открыта."
+        "a": "Официальная дата глобального релиза подтверждена на 15 января 2027 года (1-й квартал 2027 года). Предварительная регистрация открыта."
       },
       {
         "q": "Проект Муген — это то же самое, что Ананта?",
@@ -4817,7 +4817,7 @@ export const translations = {
     ],
     "codesData": [
       {
-        "code": "ANANTA2026",
+        "code": "ANANTA2027",
         "reward": "1000 кредитов, 5 ломаных ковриков",
         "status": "Активен при запуске"
       },

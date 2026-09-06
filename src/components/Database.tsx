@@ -6,7 +6,7 @@ export function CodesSection() {
   const { t } = useLanguage();
   
   const baseCodes = [
-    { code: 'NOVACITY2026', reward: 'Launch Celebration Reward (Est.)', note: 'Official — At Launch', status: 'Pending Launch', state: 'pending' },
+    { code: 'NOVACITY2027', reward: 'Launch Celebration Reward (Est.)', note: 'Official — At Launch', status: 'Pending Launch', state: 'pending' },
     { code: 'ANANTADAY1', reward: 'Day 1 Player Pack (Est.)', note: 'Community Prediction', status: 'Pending Launch', state: 'pending' },
     { code: 'PREREGBONUS', reward: 'Pre-Registration Reward', note: 'Official — Pre-reg Confirmed', status: 'At Launch', state: 'pending' },
   ];
@@ -109,7 +109,7 @@ function getCompareData(lang: string) {
         { feature: 'PvP Mode', ananta: { v: '✓ Confirmed', t: 'check' }, nte: { v: '~ Limited', t: 'partial' }, gi: { v: '✗ No PvP', t: 'cross' } },
         { feature: 'Cross-Platform Play', ananta: { v: '✓ Full', t: 'check' }, nte: { v: '✓ Full', t: 'check' }, gi: { v: '~ Partial', t: 'partial' } },
         { feature: 'Business Model', ananta: { v: 'Cosmetics Only', t: 'text' }, nte: { v: 'Character Gacha', t: 'text' }, gi: { v: 'Character + Weapon Gacha', t: 'text' } },
-        { feature: 'Release Status', ananta: { v: 'Q3 2026 (Est.)', t: 'partial' }, nte: { v: '✓ Live (Apr 2026)', t: 'check' }, gi: { v: '✓ Live (2020)', t: 'check' } },
+        { feature: 'Release Status', ananta: { v: 'Jan 15, 2027', t: 'partial' }, nte: { v: '✓ Live (Apr 2026)', t: 'check' }, gi: { v: '✓ Live (2020)', t: 'check' } },
       ]
     },
     CN: {
@@ -126,7 +126,7 @@ function getCompareData(lang: string) {
         { feature: 'PVP 竞技', ananta: { v: '✓ 已确认有', t: 'check' }, nte: { v: '~ 部分模式', t: 'partial' }, gi: { v: '✗ 无 PVP', t: 'cross' } },
         { feature: '跨平台互通', ananta: { v: '✓ 完全互通', t: 'check' }, nte: { v: '✓ 完全互通', t: 'check' }, gi: { v: '~ 部分限制', t: 'partial' } },
         { feature: '商业模式', ananta: { v: '仅外观收费', t: 'text' }, nte: { v: '角色抽卡付费', t: 'text' }, gi: { v: '角色及武器抽卡', t: 'text' } },
-        { feature: '公测/上线时间', ananta: { v: '2026年Q3（预计）', t: 'partial' }, nte: { v: '✓ 已公测 (2026年4月)', t: 'check' }, gi: { v: '✓ 已公测 (2020年)', t: 'check' } },
+        { feature: '公测/上线时间', ananta: { v: '2027年1月15日', t: 'partial' }, nte: { v: '✓ 已公测 (2026年4月)', t: 'check' }, gi: { v: '✓ 已公测 (2020年)', t: 'check' } },
       ]
     },
     TW: {
@@ -135,7 +135,7 @@ function getCompareData(lang: string) {
       footerNote: '* 劇源自官方預告片、開發者訪談及社區測試。部分代號：無限大細節為發售前預測估算。',
       rows: [
         { feature: '角色抽卡', ananta: { v: '✓ 無', t: 'check' }, nte: { v: '✗ 有', t: 'cross' }, gi: { v: '✗ 有', t: 'cross' } },
-        { feature: '開放世界地圖', ananta: { v: '真實曼哈頓比例', t: 'text' }, nte: { v: '現代都市比例', t: 'text' }, gi: { v: '遼闊提瓦特大陸', t: 'text' } },
+        { feature: '開放世界地圖', ananta: { v: '真實曼哈頓比例', t: 'text' }, nte: { v: '現代都市比例', t: 'text' }, gi: { v: '遼闊提瓦트大陸', t: 'text' } },
         { feature: '支持平台', ananta: { v: 'PC · PS5 · 移動端', t: 'text' }, nte: { v: 'PC · PS5 · 移動端', t: 'text' }, gi: { v: 'PC · PS4/5 · 移動端', t: 'text' } },
         { feature: '世界背景', ananta: { v: '現代都市異能', t: 'text' }, nte: { v: '現代都市異能', t: 'text' }, gi: { v: '奇幻冒險世界', t: 'text' } },
         { feature: 'NPC AI生態', ananta: { v: '✓ 24/7即時反應', t: 'check' }, nte: { v: '~ 基礎循環', t: 'partial' }, gi: { v: '~ 基礎循環', t: 'partial' } },
@@ -143,7 +143,7 @@ function getCompareData(lang: string) {
         { feature: 'PVP 競技', ananta: { v: '✓ 已確認有', t: 'check' }, nte: { v: '~ 部分模式', t: 'partial' }, gi: { v: '✗ 無 PVP', t: 'cross' } },
         { feature: '跨平台互通', ananta: { v: '✓ 完全互通', t: 'check' }, nte: { v: '✓ 完全互通', t: 'check' }, gi: { v: '~ 部分限制', t: 'partial' } },
         { feature: '商業模式', ananta: { v: '僅外觀收費', t: 'text' }, nte: { v: '角色抽卡付費', t: 'text' }, gi: { v: '角色及武器抽卡', t: 'text' } },
-        { feature: '公測/上線時間', ananta: { v: '2026年Q3（預計）', t: 'partial' }, nte: { v: '✓ 已公測 (2026年4月)', t: 'check' }, gi: { v: '✓ 已公測 (2020年)', t: 'check' } },
+        { feature: '公測/上線時間', ananta: { v: '2027年1月15日', t: 'partial' }, nte: { v: '✓ 已公測 (2026年4月)', t: 'check' }, gi: { v: '✓ 已公測 (2020年)', t: 'check' } },
       ]
     },
     JP: {
@@ -160,7 +160,7 @@ function getCompareData(lang: string) {
         { feature: 'PvP対戦', ananta: { v: '✓ 搭載確定', t: 'check' }, nte: { v: '~ 一部予定', t: 'partial' }, gi: { v: '✗ なし', t: 'cross' } },
         { feature: 'クロスプレイ', ananta: { v: '✓ フル対応', t: 'check' }, nte: { v: '✓ フル対応', t: 'check' }, gi: { v: '~ 一部制限', t: 'partial' } },
         { feature: '課金方式', ananta: { v: 'スキン・外見のみ', t: 'text' }, nte: { v: 'キャラガチャ', t: 'text' }, gi: { v: 'キャラ・武器ガチャ', t: 'text' } },
-        { feature: '配信状況/時期', ananta: { v: '2026年 Q3 (予定)', t: 'partial' }, nte: { v: '✓ 配信中 (2026年4月)', t: 'check' }, gi: { v: '✓ 配信中 (2020年)', t: 'check' } },
+        { feature: '配信状況/時期', ananta: { v: '2027年1月15日', t: 'partial' }, nte: { v: '✓ 配信中 (2026年4月)', t: 'check' }, gi: { v: '✓ 配信中 (2020年)', t: 'check' } },
       ]
     },
     KR: {
@@ -177,7 +177,7 @@ function getCompareData(lang: string) {
         { feature: 'PvP 게임 모드', ananta: { v: '✓ 확정 탑재', t: 'check' }, nte: { v: '~ 제한적 모드', t: 'partial' }, gi: { v: '✗ PvP 지원 제로', t: 'cross' } },
         { feature: '크로스플레이 지원', ananta: { v: '✓ 완벽 지원', t: 'check' }, nte: { v: '✓ 완벽 지원', t: 'check' }, gi: { v: '~ 부분 지원', t: 'partial' } },
         { feature: '비즈니스 모델', ananta: { v: '외형 치장품 독점', t: 'text' }, nte: { v: '캐릭터 뽑기 중심', t: 'text' }, gi: { v: '캐릭터 및 무기 뽑기', t: 'text' } },
-        { feature: '출시 현황', ananta: { v: '2026년 3분기 (예정)', t: 'partial' }, nte: { v: '✓ 성황리 운영 (2026년 4월)', t: 'check' }, gi: { v: '✓ 성황리 운영 (2020년)', t: 'check' } },
+        { feature: '출시 현황', ananta: { v: '2027년 1월 15일', t: 'partial' }, nte: { v: '✓ 성황리 운영 (2026년 4월)', t: 'check' }, gi: { v: '✓ 성황리 운영 (2020년)', t: 'check' } },
       ]
     },
     DE: {
@@ -194,7 +194,7 @@ function getCompareData(lang: string) {
         { feature: 'PvP-Modus', ananta: { v: '✓ Bestätigt', t: 'check' }, nte: { v: '~ Eingeschränkt', t: 'partial' }, gi: { v: '✗ Kein PvP', t: 'cross' } },
         { feature: 'Crossplay', ananta: { v: '✓ Vollständig', t: 'check' }, nte: { v: '✓ Vollständig', t: 'check' }, gi: { v: '~ Teilweise', t: 'partial' } },
         { feature: 'Geschäftsmodell', ananta: { v: 'Nur Kosmetika', t: 'text' }, nte: { v: 'Charakter-Schmiede', t: 'text' }, gi: { v: 'Charaktere- & Waffen-Gacha', t: 'text' } },
-        { feature: 'Release-Status', ananta: { v: 'Q3 2026 (Schätzung)', t: 'partial' }, nte: { v: '✓ Live (April 2026)', t: 'check' }, gi: { v: '✓ Live (Seit 2020)', t: 'check' } },
+        { feature: 'Release-Status', ananta: { v: '15. Jan 2027', t: 'partial' }, nte: { v: '✓ Live (April 2026)', t: 'check' }, gi: { v: '✓ Live (Seit 2020)', t: 'check' } },
       ]
     },
     FR: {
@@ -211,7 +211,7 @@ function getCompareData(lang: string) {
         { feature: 'Mode PvP', ananta: { v: '✓ Confirmé', t: 'check' }, nte: { v: '~ Limité', t: 'partial' }, gi: { v: '✗ Aucun PvP', t: 'cross' } },
         { feature: 'Cross-plateforme', ananta: { v: '✓ Intégral', t: 'check' }, nte: { v: '✓ Intégral', t: 'check' }, gi: { v: '~ Partiel', t: 'partial' } },
         { feature: 'Modèle économique', ananta: { v: 'Cosmétiques uniquement', t: 'text' }, nte: { v: 'Gacha de personnages', t: 'text' }, gi: { v: 'Gacha personnages & armes', t: 'text' } },
-        { feature: 'Date de sortie', ananta: { v: 'T3 2026 (Est.)', t: 'partial' }, nte: { v: '✓ En ligne (Avril 2026)', t: 'check' }, gi: { v: '✓ En ligne (Depuis 2020)', t: 'check' } },
+        { feature: 'Date de sortie', ananta: { v: '15 Janv 2027', t: 'partial' }, nte: { v: '✓ En ligne (Avril 2026)', t: 'check' }, gi: { v: '✓ En ligne (Depuis 2020)', t: 'check' } },
       ]
     },
     IT: {
@@ -228,7 +228,7 @@ function getCompareData(lang: string) {
         { feature: 'Modalità PvP', ananta: { v: '✓ Confermato', t: 'check' }, nte: { v: '~ Limitato', t: 'partial' }, gi: { v: '✗ No PvP', t: 'cross' } },
         { feature: 'Cross-Platform', ananta: { v: '✓ Completo', t: 'check' }, nte: { v: '✓ Completo', t: 'check' }, gi: { v: '~ Parziale', t: 'partial' } },
         { feature: 'Monetizzazione', ananta: { v: 'Solo cosmetici', t: 'text' }, nte: { v: 'Gacha di personaggi', t: 'text' }, gi: { v: 'Gacha personaggi e armi', t: 'text' } },
-        { feature: 'Stato di rilascio', ananta: { v: 'Q3 2026 (Stima)', t: 'partial' }, nte: { v: '✓ Attivo (Apr 2026)', t: 'check' }, gi: { v: '✓ Attivo (Dal 2020)', t: 'check' } },
+        { feature: 'Stato di rilascio', ananta: { v: '15 Gen 2027', t: 'partial' }, nte: { v: '✓ Attivo (Apr 2026)', t: 'check' }, gi: { v: '✓ Attivo (Dal 2020)', t: 'check' } },
       ]
     },
     RU: {
@@ -245,7 +245,7 @@ function getCompareData(lang: string) {
         { feature: 'Режим PvP', ananta: { v: '✓ Подтвержден', t: 'check' }, nte: { v: '~ Ограничен', t: 'partial' }, gi: { v: '✗ Без PvP', t: 'cross' } },
         { feature: 'Совместимость платформ', ananta: { v: '✓ Полная', t: 'check' }, nte: { v: '✓ Полная', t: 'check' }, gi: { v: '~ Частичная', t: 'partial' } },
         { feature: 'Монетизация', ananta: { v: 'Косметика (Скины)', t: 'text' }, nte: { v: 'Гача персонажей', t: 'text' }, gi: { v: 'Гача героев и оружия', t: 'text' } },
-        { feature: 'Статус проекта', ananta: { v: 'Q3 2026 (Оценка)', t: 'partial' }, nte: { v: '✓ Доступен (Апр 2026)', t: 'check' }, gi: { v: '✓ Доступен (С 2020 г.)', t: 'check' } },
+        { feature: 'Статус проекта', ananta: { v: '15 янв 2027', t: 'partial' }, nte: { v: '✓ Доступен (Апр 2026)', t: 'check' }, gi: { v: '✓ Доступен (С 2020 г.)', t: 'check' } },
       ]
     },
   };

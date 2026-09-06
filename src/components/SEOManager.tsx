@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { INITIAL_BLOG_POSTS } from '../data/blogData';
 
 interface SEOManagerProps {
   currentHash: string;
@@ -195,6 +196,121 @@ export function SEOManager({ currentHash }: SEOManagerProps) {
     updateOrCreateMeta('property', 'og:url', window.location.href);
     updateOrCreateMeta('name', 'twitter:title', title);
     updateOrCreateMeta('name', 'twitter:description', description);
+
+    // Hreflang & Canonical dynamic link injections
+    const langMap: Record<string, string> = {
+      EN: 'en',
+      CN: 'zh-Hans',
+      TW: 'zh-Hant',
+      JP: 'ja',
+      KR: 'ko',
+      DE: 'de',
+      FR: 'fr',
+      IT: 'it',
+      RU: 'ru'
+    };
+
+    // Remove old alternates to prevent growing stack
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+
+    // Canonical url setup
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', window.location.origin + window.location.pathname + window.location.search + window.location.hash);
+
+    // Hreflang injection
+    Object.entries(langMap).forEach(([key, val]) => {
+      const link = document.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', val);
+      link.setAttribute('href', window.location.origin + window.location.pathname + window.location.search + window.location.hash);
+      document.head.appendChild(link);
+    });
+
+    // Dynamic JSON-LD Structured Data (Schema.org) for Search Snippets
+    let jsonLd: any = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Ananta Database",
+      "alternateName": ["ANANTADB", "代号无限大数据库", "代号无限大攻略网", "Ananta Wiki"],
+      "url": "https://anantadb.com/",
+      "description": description
+    };
+
+    if (currentHash.startsWith('#/blog/post/') || currentHash.startsWith('#blog/post/')) {
+      const postId = currentHash.includes('/post/') ? currentHash.split('/post/')[1] : '';
+      const post = INITIAL_BLOG_POSTS.find(p => p.id === postId);
+      if (post) {
+        jsonLd = {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title[lang] || post.title.EN || post.title.CN,
+          "image": post.coverImage,
+          "datePublished": post.date,
+          "author": {
+            "@type": "Person",
+            "name": post.author.name,
+            "jobTitle": post.author.role[lang] || post.author.role.EN
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ananta Database",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://anantadb.com/favicon.png"
+            }
+          },
+          "description": post.summary[lang] || post.summary.EN || post.summary.CN
+        };
+      }
+    } else if (currentHash.startsWith('#/wiki/characters/')) {
+      const charId = currentHash.replace('#/wiki/characters/', '');
+      const charIndices: Record<string, number> = { taffy: 0, richie: 1, lykaia: 2, captain: 3 };
+      const charIdx = charIndices[charId];
+      if (charIdx !== undefined && charData[charIdx]) {
+        const char = charData[charIdx];
+        jsonLd = {
+          "@context": "https://schema.org",
+          "@type": "Game",
+          "name": `${char.name} - Ananta Agent`,
+          "description": `${char.name} is a high-interaction agent in Ananta. Element: ${char.element}, Role: ${char.role}. View full companion guidelines.`,
+          "image": char.avatar_url || "https://anantadb.com/favicon.png"
+        };
+      }
+    }
+
+    // Append FAQPage structured schema if on main layout home
+    const faqList = (typeof t('faqData') === 'object' ? t('faqData') : []) as any[];
+    if (faqList && faqList.length > 0 && (!currentHash || currentHash === '#')) {
+      jsonLd = [
+        jsonLd,
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqList.slice(0, 4).map((f: any) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": f.a
+            }
+          }))
+        }
+      ];
+    }
+
+    let scriptTag = document.getElementById('anantadb-jsonld') as HTMLScriptElement;
+    if (!scriptTag) {
+      scriptTag = document.createElement('script');
+      scriptTag.id = 'anantadb-jsonld';
+      scriptTag.type = 'application/ld+json';
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify(jsonLd);
 
   }, [currentHash, lang, t]);
 
