@@ -53,6 +53,18 @@ const mapTranslations: Record<string, Record<string, string>> = {
   }
 };
 
+const bannerTranslations: Record<string, string> = {
+  CN: "🗺️ 完整世界大地图重磅公开！除新星市外新增第二都会「凌云城」与广袤区域，规模扩大3倍！点击抢先阅读大地图深度解析报告 ➔",
+  TW: "🗺️ 完整世界大地圖重磅公開！除新星市外新增第二都會「凌雲城」與廣袤區域，規模擴大3倍！點擊搶先閱讀大地圖深度解析報告 ➔",
+  EN: "🗺️ Complete World Map Revealed! Added second metropolis LING YUN CITY alongside NOVA CITY, expanding scale by 3X! Click to read details ➔",
+  JP: "🗺️ 完全な世界マップ公開！新星市に加えて第二都市「凌雲城」と広大なエリアが追加され、規模が3倍に！詳細はこちら ➔",
+  KR: "🗺️ 전체 세계 지도 전격 공개! 신성시 외 제2도시 「능운성」 및 광활한 구역 추가로 3배 확장! 자세히 보기 ➔",
+  DE: "🗺️ Vollständige Weltkarte enthüllt! LING YUN CITY neben NOVA CITY hinzugefügt, Maßstab um das 3-fache vergrößert! Hier klicken ➔",
+  FR: "🗺️ Carte du monde complète révélée ! LING YUN CITY ajoutée à côté de NOVA CITY, échelle agrandie de 3X ! Cliquez pour voir ➔",
+  IT: "🗺️ Mappa del mondo completa svelata! Aggiunta LING YUN CITY oltre a NOVA CITY, scala ampliata di 3 volte! Clicca per i dettagli ➔",
+  RU: "🗺️ Полная карта мира раскрыта! Добавлен город ЛИНЪЮНЬ, масштаб увеличен в 3 раза! Нажмите для просмотра ➔"
+};
+
 export function MapSection() {
   const { t, lang } = useLanguage();
   const [activeId, setActiveId] = useState<number | null>(null);
@@ -60,6 +72,12 @@ export function MapSection() {
   const [isMobile, setIsMobile] = useState(false);
   const [isTouch, setIsTouch] = useState(false);
   const [loadedSrc, setLoadedSrc] = useState<string | null>(null);
+
+  const handleMapBannerClick = () => {
+    window.history.pushState(null, '', `#/news/article/1`);
+    window.dispatchEvent(new Event('popstate'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const checkMobile = () => {
@@ -183,6 +201,25 @@ export function MapSection() {
     <section id="map" className="px-[5vw] py-20 bg-ananta-bg2 border-t border-ananta-border">
       <SectionLabel text={t('sections.mapLabel')} />
       <SectionTitle text={t('sections.mapTitle')} />
+
+      {/* Bright Blinking Banner Linking to the Latest Map News */}
+      <div 
+        onClick={handleMapBannerClick}
+        className="mt-5 p-4.5 bg-ananta-neon/[0.04] border border-ananta-neon/30 hover:border-ananta-neon/90 hover:bg-ananta-neon/[0.08] transition-all duration-300 rounded-lg cursor-pointer flex items-center justify-between gap-4 group/banner shadow-[0_0_15px_rgba(0,229,255,0.03)] hover:shadow-[0_0_20px_rgba(0,229,255,0.15)] select-none"
+      >
+        <div className="flex items-center gap-3 min-w-0">
+          <span className="relative flex h-2.5 w-2.5 shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ananta-neon opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-ananta-neon"></span>
+          </span>
+          <p className="text-[0.76rem] sm:text-[0.82rem] font-bold text-white group-hover:text-ananta-neon transition-colors tracking-wide leading-relaxed font-sans truncate">
+            {bannerTranslations[lang] || bannerTranslations.EN}
+          </p>
+        </div>
+        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-ananta-neon/10 border border-ananta-neon/20 flex items-center justify-center text-ananta-neon group-hover:bg-ananta-neon group-hover:text-black transition-all">
+          ➔
+        </div>
+      </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8">
         
