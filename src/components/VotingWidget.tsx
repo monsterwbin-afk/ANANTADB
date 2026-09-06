@@ -575,7 +575,8 @@ export function VotingWidget() {
 
         {/* Roles votes table list */}
         <div className="space-y-4">
-          {roles.map((role) => {
+          {roles.map((role, idx) => {
+            const isWinner = idx === 0;
             const isVoted = votedIds.includes(role.id);
             const isDisableVoting = isVoting !== null;
             const valPercent = Math.max(8, Math.round(((role.total_votes || 0) / maxVotes) * 100));
@@ -584,21 +585,25 @@ export function VotingWidget() {
               <div 
                 key={role.id} 
                 className={`p-3 border transition-all duration-300 relative group/row ${
-                  isVoted 
-                    ? 'bg-gradient-to-r from-ananta-neon/[0.03] to-transparent border-ananta-neon/15 pl-4' 
-                    : 'bg-ananta-bg3/40 border-ananta-border/30 hover:border-ananta-neon/20 hover:bg-ananta-bg3/80'
+                  isWinner
+                    ? 'bg-gradient-to-r from-amber-500/[0.08] to-transparent border-amber-500/40 pl-4 shadow-[0_0_15px_rgba(245,158,11,0.08)]'
+                    : isVoted 
+                      ? 'bg-gradient-to-r from-ananta-neon/[0.03] to-transparent border-ananta-neon/15 pl-4' 
+                      : 'bg-ananta-bg3/40 border-ananta-border/30 hover:border-ananta-neon/20 hover:bg-ananta-bg3/80'
                 }`}
               >
-                {/* Thin vertical glow bar on voted items */}
-                {isVoted && (
+                {/* Thin vertical glow bar on voted items or winner */}
+                {isWinner ? (
+                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-amber-500 shadow-[0_0_8px_#f59e0b]" />
+                ) : isVoted ? (
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-ananta-neon" />
-                )}
+                ) : null}
 
                 <div className="flex items-center gap-3">
                   {/* Circle Avatar with custom representative colored outline */}
                   <div 
                     className="w-10 h-10 rounded-full border-2 overflow-hidden shrink-0 transition-transform duration-300 group-hover/row:scale-105"
-                    style={{ borderColor: role.color }}
+                    style={{ borderColor: isWinner ? '#f59e0b' : role.color }}
                   >
                     <img 
                       src={role.avatar_url} 
@@ -611,8 +616,13 @@ export function VotingWidget() {
                   {/* Character stats & Progress block */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1.5">
-                      <span className="font-sans text-[0.85rem] font-bold text-white group-hover/row:text-ananta-neon transition-colors">
+                      <span className="font-sans text-[0.85rem] font-bold text-white group-hover/row:text-ananta-neon transition-colors flex items-center gap-1.5">
                         {getLocalizedRoleName(role.id, role.name, lang)}
+                        {isWinner && (
+                          <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[0.55rem] font-black tracking-wider bg-amber-500 text-black rounded-none uppercase animate-pulse select-none">
+                            🏆 WINNER
+                          </span>
+                        )}
                       </span>
                       <span className="font-mono text-[0.8rem] font-semibold text-white/90">
                         {role.total_votes || 0}
@@ -626,16 +636,22 @@ export function VotingWidget() {
                         animate={{ width: `${valPercent}%` }}
                         transition={{ type: 'spring', stiffness: 50, damping: 15 }}
                         className="h-full rounded-full"
-                        style={{ backgroundColor: role.color, boxShadow: `0 0 8px ${role.color}80` }}
+                        style={{ backgroundColor: isWinner ? '#f59e0b' : role.color, boxShadow: `0 0 8px ${isWinner ? '#f59e0b' : role.color}80` }}
                       />
                     </div>
                   </div>
 
                   {/* Interactive VOTE trigger button (Now Static Result Mode) */}
                   <div className="shrink-0 pl-1">
-                    <span className="inline-flex items-center gap-1 font-mono text-[0.65rem] text-amber-400 font-bold uppercase border border-amber-500/30 px-2 py-1 bg-amber-500/5 select-none rounded-none cursor-default">
-                      🔒 {text.voted}
-                    </span>
+                    {isWinner ? (
+                      <span className="inline-flex items-center gap-1 font-mono text-[0.65rem] text-amber-400 font-bold uppercase border border-amber-500/40 px-2 py-1 bg-amber-500/10 select-none rounded-none cursor-default">
+                        👑 {text.voted}
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 font-mono text-[0.65rem] text-amber-400 font-bold uppercase border border-amber-500/30 px-2 py-1 bg-amber-500/5 select-none rounded-none cursor-default">
+                        🔒 {text.voted}
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
