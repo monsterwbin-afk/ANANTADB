@@ -26,7 +26,7 @@ export const post4: BlogPost = {
     "都市传说",
     "Ananta"
   ],
-  "coverImage": "https://www.anantagame.com/pc/gw/20250904162009/assets/role-tafei_0ed12004.jpg",
+  "coverImage": "https://www.anantagame.com/pc/gw/20250904162009/assets/bg_8bda2623.jpg",
   "author": {
     "name": "Captain Alex",
     "role": {
