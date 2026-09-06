@@ -18,105 +18,105 @@ if (SBS_URL && SBS_ANON && SBS_URL.startsWith('http')) {
   }
 }
 
-// International Language Translations for the Voting UI
+// International Language Translations for the Voting UI (Finalized Results)
 const LOCALES: Record<string, Record<string, string>> = {
   EN: {
-    title: "🔥 Popularity Contest",
-    sub: "💡 Limit: Max 1 vote per character daily. Multi-character voting allowed!",
-    voted: "Voted",
-    vote: "Vote",
-    total: "Total: {count} participants · Live Updates",
-    voting: "Voting...",
-    expand: "View Full Rankings & Vote →",
-    rankTitle: "Character Leaderboard",
+    title: "🏆 Leaderboard Final",
+    sub: "🔒 Voting Closed! The popularity contest has successfully concluded on September 6, 2026. Here are the final results.",
+    voted: "Closed",
+    vote: "Closed",
+    total: "Total: {count} participants · Final Standings",
+    voting: "Closed...",
+    expand: "View Full Final Rankings ➔",
+    rankTitle: "Character Leaderboard (Final)",
     close: "Close"
   },
   CN: {
-    title: "🔥 角色人气榜",
-    sub: "💡 规则：每个角色每日限投 1 票，可投多个不同角色",
-    voted: "已投",
-    vote: "投票",
-    total: "共 {count} 人参与 · 实时更新",
-    voting: "投票中...",
-    expand: "展开全部排行并投票 →",
-    rankTitle: "人气角色投票榜",
+    title: "🏆 人气榜最终结果",
+    sub: "🔒 投票已截止！人气投票活动已于2026年9月6日圆满结束，感谢各位探测员的热情参与！以下为最终票选排名结果公示。",
+    voted: "已截止",
+    vote: "投票截止",
+    total: "共 {count} 人参与 · 最终排行",
+    voting: "已截止...",
+    expand: "查看全部最终人气排行 ➔",
+    rankTitle: "人气角色最终排行榜",
     close: "关闭"
   },
   TW: {
-    title: "🔥 角色人氣榜",
-    sub: "💡 規則：每個角色每日限投 1 票，可投多個不同角色",
-    voted: "已投",
-    vote: "投票",
-    total: "共 {count} 人參與 · 實時更新",
-    voting: "投票中...",
-    expand: "展開全部排行並投票 →",
-    rankTitle: "人氣角色投票榜",
+    title: "🏆 人氣榜最終結果",
+    sub: "🔒 投票已截止！人氣投票活動已於2026年9月6日圓滿結束，感謝各位探測員的热情參與！以下為最終票選排名結果公示。",
+    voted: "已截止",
+    vote: "投票截止",
+    total: "共 {count} 人參與 · 最終排行",
+    voting: "已截止...",
+    expand: "查看全部最終人氣排行 ➔",
+    rankTitle: "人氣角色最終排行榜",
     close: "關閉"
   },
   JP: {
-    title: "🔥 キャラ人気投票",
-    sub: "💡 各キャラ1日1票登録可能。複数キャラ投票対応！",
-    voted: "投票済",
-    vote: "投票",
-    total: "参加者数: {count}人 · リアルタイム更新",
-    voting: "投票中...",
-    expand: "ランキングを広げて投票する →",
-    rankTitle: "キャラクター投票ボード",
+    title: "🏆 最終投票結果",
+    sub: "🔒 投票は終了しました！キャラクター人気投票は2026年9月6日をもって締め切られました。ご参加ありがとうございました！",
+    voted: "終了",
+    vote: "投票終了",
+    total: "参加者数: {count}人 · 最終結果",
+    voting: "終了...",
+    expand: "最終ランキングを見る ➔",
+    rankTitle: "キャラクター最終投票結果",
     close: "閉じる"
   },
   KR: {
-    title: "🔥 캐릭터 인기 투표",
-    sub: "💡 캐릭터별 하루 1회 투표권. 다중 캐릭터 투표 허용!",
-    voted: "투표함",
-    vote: "투표",
-    total: "{count}명 참여 중 · 실시간 업데이트",
-    voting: "투표 중...",
-    expand: "전체 랭킹 보기 및 투표 →",
-    rankTitle: "캐릭터 인기 투표",
+    title: "🏆 최종 투표 결과",
+    sub: "🔒 투표 종료! 인기 투표가 2026년 9月 6日 성공적으로 종료되었습니다. 참여해 주셔서 감사합니다! 최종 순위입니다.",
+    voted: "종료됨",
+    vote: "투표 종료",
+    total: "{count}명 참여 · 최종 순위",
+    voting: "종료됨...",
+    expand: "전체 최종 순위 보기 ➔",
+    rankTitle: "캐릭터 최종 투표 결과",
     close: "닫기"
   },
   DE: {
-    title: "🔥 Beliebtheits-Wettbewerb",
-    sub: "💡 Limit: Max. 1 Stimme pro Charakter täglich. Mehrere Charaktere erlaubt!",
-    voted: "Abgestimmt",
-    vote: "Voten",
-    total: "Insgesamt: {count} Stimmen · Live",
-    voting: "Wird gewählt...",
-    expand: "Alle Rankings ansehen & abstimmen →",
-    rankTitle: "Charakter-Rangliste",
+    title: "🏆 Endergebnisse",
+    sub: "🔒 Abstimmung beendet! Der Beliebtheits-Wettbewerb wurde am 6. September 2026 geschlossen. Vielen Dank für eure Teilnahme!",
+    voted: "Beendet",
+    vote: "Geschlossen",
+    total: "Insgesamt: {count} Stimmen · Endergebnis",
+    voting: "Geschlossen...",
+    expand: "Endergebnisse anzeigen ➔",
+    rankTitle: "Endergebnisse der Abstimmung",
     close: "Schließen"
   },
   FR: {
-    title: "🔥 Concours de Popularité",
-    sub: "💡 Limite : Max 1 vote par personnage quotidien. Vote multi-personnages possible !",
-    voted: "Voté",
-    vote: "Voter",
-    total: "Total : {count} participants · Temps réel",
-    voting: "Vote...",
-    expand: "Voir tout le classement et voter →",
-    rankTitle: "Tableau d'Honneur",
+    title: "🏆 Résultats Finaux",
+    sub: "🔒 Vote terminé ! Le concours de popularité s'est achevé le 6 septembre 2026. Merci à tous d'avoir voté !",
+    voted: "Terminé",
+    vote: "Clos",
+    total: "Total : {count} participants · Résultats",
+    voting: "Clos...",
+    expand: "Afficher le classement final ➔",
+    rankTitle: "Classement Final Officiel",
     close: "Fermer"
   },
   IT: {
-    title: "🔥 Classifica di Popolarità",
-    sub: "💡 Limite: Max 1 voto per personaggio al giorno. Votazioni multiple consentite!",
-    voted: "Votato",
-    vote: "Vota",
-    total: "Totale: {count} votanti · Aggiornato in tempo reale",
-    voting: "Voto in corso...",
-    expand: "Espandi classifica e vota →",
-    rankTitle: "Classifica dei Personaggi",
+    title: "🏆 Classifica Finale",
+    sub: "🔒 Votazioni chiuse! Il sondaggio si è concluso il 6 settembre 2026. Grazie a tutti i partecipanti! Ecco i risultati ufficiali.",
+    voted: "Chiuso",
+    vote: "Chiuso",
+    total: "Totale: {count} votanti · Risultati Finali",
+    voting: "Chiuso...",
+    expand: "Mostra classifica finale ➔",
+    rankTitle: "Classifica Ufficiale dei Personaggi",
     close: "Chiudi"
   },
   RU: {
-    title: "🔥 Рейтинг Популярности",
-    sub: "💡 Лимит: не более 1 голоса за персонажа в день. Можно голосовать за нескольких!",
-    voted: "Голос учтен",
-    vote: "Голосовать",
-    total: "Всего участников: {count} · В реальном времени",
-    voting: "Голосование...",
-    expand: "Открыть весь рейтинг и проголосовать →",
-    rankTitle: "Доска голосования за персонажей",
+    title: "🏆 Окончательные итоги",
+    sub: "🔒 Голосование закрыто! Рейтинг популярности официально завершен 6 сентября 2026 года. Спасибо за участие!",
+    voted: "Закрыто",
+    vote: "Закрыто",
+    total: "Всего участников: {count} · Окончательный итог",
+    voting: "Закрыто...",
+    expand: "Показать финальный рейтинг ➔",
+    rankTitle: "Окончательный рейтинг персонажей",
     close: "Закрыть"
   }
 };
@@ -631,27 +631,11 @@ export function VotingWidget() {
                     </div>
                   </div>
 
-                  {/* Interactive VOTE trigger button */}
+                  {/* Interactive VOTE trigger button (Now Static Result Mode) */}
                   <div className="shrink-0 pl-1">
-                    {isVoted ? (
-                      <span className="inline-flex items-center gap-1 font-mono text-[0.65rem] text-ananta-muted uppercase border border-ananta-border px-2 py-1 bg-ananta-bg/40 cursor-default">
-                        <Check className="w-3 h-3 text-emerald-400" />
-                        {text.voted}
-                      </span>
-                    ) : (
-                      <button
-                        onClick={() => handleVoteAction(role.id)}
-                        disabled={isDisableVoting}
-                        className="inline-flex items-center gap-1 font-sans text-[0.68rem] font-bold tracking-wider text-white uppercase bg-ananta-neon2/80 hover:bg-ananta-neon2 border border-ananta-neon2/20 hover:border-ananta-neon2 px-2.5 py-1.5 transition-all duration-200 hover:scale-105 hover:shadow-[0_0_12px_rgba(255,77,109,0.4)] disabled:opacity-30 disabled:scale-100 disabled:hover:scale-100 disabled:hover:shadow-none disabled:shadow-none disabled:cursor-not-allowed cursor-pointer"
-                      >
-                        {isVoting === role.id ? (
-                          <Loader2 className="w-3 h-3 animate-spin" />
-                        ) : (
-                          <Heart className="w-3 h-3 fill-white" />
-                        )}
-                        <span>{text.vote}</span>
-                      </button>
-                    )}
+                    <span className="inline-flex items-center gap-1 font-mono text-[0.65rem] text-amber-400 font-bold uppercase border border-amber-500/30 px-2 py-1 bg-amber-500/5 select-none rounded-none cursor-default">
+                      🔒 {text.voted}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -719,27 +703,20 @@ export function VotingWidget() {
           </div>
         </div>
 
-        {/* All 4 characters layout side-by-side - interactive direct voting */}
+        {/* All 4 characters layout side-by-side - finalized closed ranking */}
         <div className="grid grid-cols-4 gap-2 sm:gap-3 mb-5">
           {topFour.map((role, rank) => {
-            const isVoted = votedIds.includes(role.id);
-            const isThisVoting = isVoting === role.id;
+            const isWinner = rank === 0;
             return (
-              <button 
+              <div 
                 key={role.id} 
                 onClick={() => {
-                  if (isVoting) return;
-                  if (isVoted) {
-                    triggerToast(lang === 'CN' ? "💡 今天已为该角色投过票了" : "💡 Voted for this character today!");
-                    return;
-                  }
-                  handleVoteAction(role.id);
+                  triggerToast(lang === 'CN' ? "🔒 人气投票活动已圆满截止" : "🔒 Popularity contest has concluded!");
                 }}
-                disabled={isVoting !== null && !isThisVoting}
-                className={`p-2 sm:p-3 relative flex flex-col items-center text-center border overflow-hidden transition-all duration-300 w-full select-none cursor-pointer group rounded-sm ${
-                  isVoted 
-                    ? 'bg-gradient-to-b from-ananta-neon/[0.05] to-transparent border-ananta-neon/30 shadow-[0_0_10px_rgba(0,229,255,0.06)]' 
-                    : 'bg-ananta-bg3/50 border-ananta-border/30 active:scale-95 active:bg-ananta-bg3 hover:border-ananta-neon/20'
+                className={`p-2 sm:p-3 relative flex flex-col items-center text-center border overflow-hidden transition-all duration-300 w-full select-none cursor-pointer rounded-sm ${
+                  isWinner 
+                    ? 'bg-gradient-to-b from-amber-500/[0.05] to-transparent border-amber-500/30 shadow-[0_0_10px_rgba(245,158,11,0.06)]' 
+                    : 'bg-ananta-bg3/50 border-ananta-border/30 hover:border-ananta-neon/10'
                 }`}
               >
                 {/* Micro mini rank badge */}
@@ -749,25 +726,20 @@ export function VotingWidget() {
 
                 <div 
                   className="w-11 h-11 sm:w-13 sm:h-13 rounded-full border-2 overflow-hidden mb-1.5 mt-2 shrink-0 relative"
-                  style={{ borderColor: role.color }}
+                  style={{ borderColor: isWinner ? '#f59e0b' : role.color }}
                 >
                   <img src={role.avatar_url} alt={getLocalizedRoleName(role.id, role.name, lang)} referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   
-                  {/* Absolute overlays for vote state */}
-                  {isThisVoting ? (
-                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-                      <Loader2 className="w-4 h-4 animate-spin text-ananta-neon" />
-                    </div>
-                  ) : isVoted ? (
-                    <div className="absolute inset-0 bg-ananta-neon/10 flex items-center justify-center">
-                      <div className="bg-emerald-500 rounded-full p-0.5 shadow-sm">
+                  {isWinner ? (
+                    <div className="absolute inset-0 bg-amber-500/5 flex items-center justify-center">
+                      <div className="bg-amber-500 rounded-full p-0.5 shadow-sm animate-pulse">
                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                       </div>
                     </div>
                   ) : null}
                 </div>
 
-                <div className={`font-sans text-[0.68rem] sm:text-[0.72rem] font-bold mb-0.5 truncate max-w-full ${isVoted ? 'text-ananta-neon' : 'text-white'}`}>
+                <div className={`font-sans text-[0.68rem] sm:text-[0.72rem] font-bold mb-0.5 truncate max-w-full ${isWinner ? 'text-amber-400' : 'text-white'}`}>
                   {getLocalizedRoleName(role.id, role.name, lang)}
                 </div>
                 
@@ -776,14 +748,14 @@ export function VotingWidget() {
                 </div>
 
                 {/* Highly intuitive mini helper badge */}
-                <div className="mt-1 font-sans text-[0.55rem] scale-[0.9] text-ananta-muted flex items-center gap-0.5 uppercase">
-                  {isVoted ? (
-                    <span className="text-emerald-400 font-bold">{text.voted}</span>
+                <div className="mt-1 font-sans text-[0.52rem] scale-[0.9] text-ananta-muted flex items-center gap-0.5 uppercase">
+                  {isWinner ? (
+                    <span className="text-amber-400 font-bold">🏆 WINNER</span>
                   ) : (
-                    <span className="group-hover:text-white transition-colors">{text.vote}</span>
+                    <span>RANK #{rank + 1}</span>
                   )}
                 </div>
-              </button>
+              </div>
             );
           })}
         </div>
@@ -875,25 +847,9 @@ export function VotingWidget() {
                         </div>
 
                         <div className="shrink-0 pl-1">
-                          {isVoted ? (
-                            <span className="inline-flex items-center gap-1 font-mono text-[0.62rem] text-ananta-muted uppercase border border-ananta-border px-1.5 py-1 bg-ananta-bg/40">
-                              <Check className="w-2.5 h-2.5 text-emerald-400" />
-                              {text.voted}
-                            </span>
-                          ) : (
-                            <button
-                              onClick={() => handleVoteAction(role.id)}
-                              disabled={isDisableVoting}
-                              className="inline-flex items-center gap-1 font-sans text-[0.65rem] font-bold tracking-wider text-white uppercase bg-ananta-neon2 border border-ananta-neon2 px-2.5 py-1.5 disabled:opacity-30 disabled:cursor-not-allowed"
-                            >
-                              {isVoting === role.id ? (
-                                <Loader2 className="w-2.5 h-2.5 animate-spin" />
-                              ) : (
-                                <Heart className="w-2.5 h-2.5 fill-white" />
-                              )}
-                              <span>{text.vote}</span>
-                            </button>
-                          )}
+                          <span className="inline-flex items-center gap-1 font-mono text-[0.62rem] text-amber-400 font-bold uppercase border border-amber-500/30 px-1.5 py-1 bg-amber-500/5 select-none rounded-none cursor-default">
+                            🔒 {text.voted}
+                          </span>
                         </div>
                       </div>
                     </div>
