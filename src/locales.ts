@@ -86,6 +86,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "September 17, 2026",
+        "tag": "MAP PREVIEW",
+        "title": "Latest 3D Map Aerial Panoramas: Forests, Oceans & Megacity Featuring Shanghai Oriental Pearl Tower!",
+        "desc": "Stunning new high-altitude 3D map bird's-eye view reveals vast continuous wilderness, dense virgin forests, endless oceans, and Chongxiao City skyline with the iconic Oriental Pearl Tower clearly visible in Photo 8!",
+        "contentIdx": 38,
+        "pinned": true
+      },
+      {
         "date": "September 1, 2026",
         "tag": "GAMEPLAY",
         "title": "Outfits & Supercar Customization Drop + Captain's Huangpu River Night Selfie",
@@ -625,6 +633,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026 年 9 月 17 日",
+        "tag": "地图爆料",
+        "title": "最新3D地图高空全景重磅曝光：森林、海洋与城市尽收眼底，图8惊现上海东方明珠塔！",
+        "desc": "全新万米高空3D俯视图曝光！无缝大世界尽收眼底：大面积茂密森林、湛蓝海洋与重霄都市群，图8更清晰呈现上海标志性建筑东方明珠塔，画面逼真惊艳，万众期待自由翱翔！",
+        "contentIdx": 38,
+        "pinned": true
+      },
       {
         "date": "2026 年 9 月 1 日",
         "tag": "实机爆料",
@@ -1166,6 +1182,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026 年 9 月 17 日",
+        "tag": "地圖爆料",
+        "title": "最新3D地圖高空全景重磅曝光：森林、海洋與城市盡收眼底，圖8驚現上海東方明珠塔！",
+        "desc": "全新萬米高空3D俯視圖曝光！無縫大世界盡收眼底：大面積茂密森林、湛藍海洋與重霄都市群，圖8更清晰呈現上海標誌性建築東方明珠塔，畫面逼真驚艷，萬眾期待自由翱翔！",
+        "contentIdx": 38,
+        "pinned": true
+      },
+      {
         "date": "2026 年 9 月 1 日",
         "tag": "實機爆料",
         "title": "實機重磅實錄：多樣化服裝、跑車與載具塗裝展示，黃浦江畔絕美夜景自拍！",
@@ -1705,6 +1729,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年9月17日",
+        "tag": "マップ速報",
+        "title": "最新3Dマップ上空パノラマ画像が公開：森林・海洋・大都会を一望、東方明珠塔も鮮明に登場！",
+        "desc": "万メートル上空からの最新3Dバードアイビューが初公開！広大な原生林、どこまでも続く紺碧の海、そして高層都市群がシームレスに広がり、画像8では上海の象徴「東方明珠塔」が鮮明に確認可能！",
+        "contentIdx": 38,
+        "pinned": true
+      },
       {
         "date": "2026年9月1日",
         "tag": "実機映像",
@@ -2246,6 +2278,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 9월 17일",
+        "tag": "맵 유출",
+        "title": "최신 3D 맵 고공 조감도 전격 유출: 숲, 바다, 대도시 파노라마와 상하이 동방명주 타워 포착!",
+        "desc": "만 미터 상공에서 촬영된 최신 3D 조감도 공개! 울창한 원시림, 끝없는 푸른 바다와 중소시 스카이라인이 한눈에 펼쳐지며, 사진 8에서는 상하이의 상징 동방명주 타워가 선명하게 포착되었습니다!",
+        "contentIdx": 38,
+        "pinned": true
+      },
+      {
         "date": "2026년 9월 1일",
         "tag": "실기 영상",
         "title": "실기 영상 공개: 다양한 코스튬, 슈퍼카 도색 커스텀 & 황푸강 야경 셀카!",
@@ -2785,6 +2825,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "17. September 2026",
+        "tag": "KARTEN-LEAK",
+        "title": "Neue 3D-Kartenansichten aus der Vogelperspektive: Wälder, Ozeane & Metropolen samt Fernsehturm Oriental Pearl!",
+        "desc": "Atemberaubende 3D-Aufnahmen aus großer Höhe zeigen riesige Urwälder, azurblaue Ozeane und die Skyline von Chongxiao City – Bild 8 zeigt unverkennbar den Fernsehturm Oriental Pearl Tower von Shanghai!",
+        "contentIdx": 38,
+        "pinned": true
+      },
       {
         "date": "1. September 2026",
         "tag": "GAMEPLAY",
@@ -3326,6 +3374,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "17 septembre 2026",
+        "tag": "APERÇU CARTE",
+        "title": "Vues aériennes panoramiques 3D inédites : Forêts, océans et mégapole avec la Perle de l'Orient de Shanghai !",
+        "desc": "Des vues aériennes 3D à très haute altitude dévoilent une immense carte sans coupure : forêts vierges, océan azuré et la skyline de Chongxiao City avec la tour Perle de l'Orient de Shanghai bien visible sur l'image 8 !",
+        "contentIdx": 38,
+        "pinned": true
+      },
+      {
         "date": "1er septembre 2026",
         "tag": "GAMEPLAY",
         "title": "Aperçu de gameplay : Tenues, personnalisation de sportives & selfie nocturne sur le Huangpu",
@@ -3866,6 +3922,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "17 settembre 2026",
+        "tag": "ANTEPRIMA MAPPA",
+        "title": "Nuove viste aeree panoramiche 3D: Foreste, oceani e megalopoli con la Torre Perla d'Oriente di Shanghai!",
+        "desc": "Spettacolari vedute aeree 3D ad altissima quota mostrano fitte foreste incontaminate, oceani infiniti e la skyline di Chongxiao City: nell'immagine 8 spicca chiaramente l'Oriental Pearl Tower di Shanghai!",
+        "contentIdx": 38,
+        "pinned": true
+      },
+      {
         "date": "1 settembre 2026",
         "tag": "GAMEPLAY",
         "title": "Nuovo gameplay: Outfit, livree per supercar e selfie notturno del Capitano sul fiume Huangpu",
@@ -4405,6 +4469,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "17 сентября 2026 г.",
+        "tag": "КАРТА МИРА",
+        "title": "Новые 3D-панорамы карты с высоты птичьего полета: Леса, океан, мегаполис и телебашня «Восточная жемчужина»!",
+        "desc": "Утечка впечатляющих 3D-снимков карты с высоты птичьего полета! Бескрайние леса, лазурный океан и панорама города Чунсяо, а на снимке 8 отчетливо видна шанхайская телебашня «Восточная жемчужина»!",
+        "contentIdx": 38,
+        "pinned": true
+      },
       {
         "date": "1 сентября 2026 г.",
         "tag": "ГЕЙМПЛЕЙ",

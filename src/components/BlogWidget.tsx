@@ -121,9 +121,9 @@ export function BlogWidget() {
           </button>
         </div>
 
-        {/* 6 Grid columns */}
+        {/* Grid columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {INITIAL_BLOG_POSTS.slice(0, 6).map(post => {
+          {INITIAL_BLOG_POSTS.map(post => {
             const isLiked = !!likedPosts[post.id];
             return (
               <div
