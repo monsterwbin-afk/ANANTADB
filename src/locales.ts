@@ -86,6 +86,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "October 29, 2026",
+        "tag": "GAMEPLAY",
+        "title": "Wingsuit Glide from Skyscrapers over Nova City & New Parkour Hybrid Gameplay Showcase!",
+        "desc": "Breathtaking new gameplay footage showcases agents diving from towering skyscrapers with wingsuits to glide across Nova City, seamlessly combining high-speed wingsuit flight with parkour traversal!",
+        "contentIdx": 39,
+        "pinned": true
+      },
+      {
         "date": "September 17, 2026",
         "tag": "MAP PREVIEW",
         "title": "Latest 3D Map Aerial Panoramas: Forests, Oceans & Megacity Featuring Shanghai Oriental Pearl Tower!",
@@ -633,6 +641,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026年10月29日",
+        "tag": "实机爆料",
+        "title": "最新实机：穿着翼装从大楼一跃而下，诺瓦城上空飞翔与跑酷结合新玩法",
+        "desc": "全新实机震撼曝光！玩家可穿着翼装从诺瓦城摩天大楼之巅一跃而下自由翱翔，体验翼装滑翔与高空跑酷的完美无缝结合！",
+        "contentIdx": 39,
+        "pinned": true
+      },
       {
         "date": "2026 年 9 月 17 日",
         "tag": "地图爆料",
@@ -1182,6 +1198,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026年10月29日",
+        "tag": "實機爆料",
+        "title": "最新實機：穿著翼裝從大樓一躍而下，諾瓦城上空飛翔與跑酷結合新玩法",
+        "desc": "全新實機震撼曝光！玩家可穿著翼裝從諾瓦城摩天大樓之巔一躍而下自由翱翔，體驗翼裝滑翔與高空跑酷的完美無縫結合！",
+        "contentIdx": 39,
+        "pinned": true
+      },
+      {
         "date": "2026 年 9 月 17 日",
         "tag": "地圖爆料",
         "title": "最新3D地圖高空全景重磅曝光：森林、海洋與城市盡收眼底，圖8驚現上海東方明珠塔！",
@@ -1729,6 +1753,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年10月29日",
+        "tag": "ゲームプレイ",
+        "title": "ウイングスーツで超高層ビルからダイブ！ノヴァシティ上空の飛行＆パルクール融合新プレイスルー",
+        "desc": "最新のゲームプレイ映像が公開！摩天楼の頂上からウイングスーツで飛び立ち、ノヴァシティの上空を高速滑空しながらパルクールへとシームレスに繋げる新システムを体験！",
+        "contentIdx": 39,
+        "pinned": true
+      },
       {
         "date": "2026年9月17日",
         "tag": "マップ速報",
@@ -2278,6 +2310,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 10월 29일",
+        "tag": "게임플레이",
+        "title": "마천루에서 윙슈트 다이빙! 노바 시티 상공 비행 및 파르쿠르 결합 신규 플레이 공개",
+        "desc": "신규 실기 영상 공개! 초고층 빌딩 위에서 윙슈트를 펼치고 노바 시티 상공을 고속 활공하며 파르쿠르와 완벽하게 연계하는 새로운 이동 액션을 선보입니다.",
+        "contentIdx": 39,
+        "pinned": true
+      },
+      {
         "date": "2026년 9월 17일",
         "tag": "맵 유출",
         "title": "최신 3D 맵 고공 조감도 전격 유출: 숲, 바다, 대도시 파노라마와 상하이 동방명주 타워 포착!",
@@ -2825,6 +2865,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "29. Oktober 2026",
+        "tag": "GAMEPLAY",
+        "title": "Wingsuit-Gleiten von Wolkenkratzern über Nova City & Parkour-Hybrid-Gameplay!",
+        "desc": "Atemberaubende neue Gameplay-Szenen zeigen Agenten, die mit Wingsuits von höchsten Wolkenkratzern stürzen und Highspeed-Flug nahtlos mit Parkour-Fortbewegung verbinden!",
+        "contentIdx": 39,
+        "pinned": true
+      },
       {
         "date": "17. September 2026",
         "tag": "KARTEN-LEAK",
@@ -3374,6 +3422,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "29 octobre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Vol en wingsuit depuis les gratte-ciels de Nova City & Nouveau gameplay de parkour hybride !",
+        "desc": "De nouvelles images de gameplay époustouflantes montrent des agents plongeant des gratte-ciels avec des wingsuits pour planer au-dessus de Nova City, combinant vol à grande vitesse et parkour !",
+        "contentIdx": 39,
+        "pinned": true
+      },
+      {
         "date": "17 septembre 2026",
         "tag": "APERÇU CARTE",
         "title": "Vues aériennes panoramiques 3D inédites : Forêts, océans et mégapole avec la Perle de l'Orient de Shanghai !",
@@ -3922,6 +3978,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "29 ottobre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Volo in tuta alare dai grattacieli di Nova City e nuovo gameplay ibrido di parkour!",
+        "desc": "Nuove e mozzafiato sequenze di gioco mostrano agenti che si lanciano con la tuta alare dai grattacieli per planare su Nova City, combinando il volo ad alta velocità con il parkour!",
+        "contentIdx": 39,
+        "pinned": true
+      },
+      {
         "date": "17 settembre 2026",
         "tag": "ANTEPRIMA MAPPA",
         "title": "Nuove viste aeree panoramiche 3D: Foreste, oceani e megalopoli con la Torre Perla d'Oriente di Shanghai!",
@@ -4469,6 +4533,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "29 октября 2026 г.",
+        "tag": "ИГРОВОЙ ПРОЦЕСС",
+        "title": "Полет в вингсьюте с небоскребов над Нова-Сити и новый гибридный геймплей паркура!",
+        "desc": "Потрясающие новые кадры игроческого процесса демонстрируют агентов, совершающих прыжки в вингсьюте с высотных зданий Нова-Сити, плавно объединяя полет на высокой скорости с паркуром!",
+        "contentIdx": 39,
+        "pinned": true
+      },
       {
         "date": "17 сентября 2026 г.",
         "tag": "КАРТА МИРА",
