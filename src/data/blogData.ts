@@ -1,3 +1,4 @@
+import { post9 } from './posts/post9';
 import { post8 } from './posts/post8';
 import { post7 } from './posts/post7';
 import { post6 } from './posts/post6';
@@ -31,6 +32,7 @@ export interface BlogPost {
 }
 
 export const INITIAL_BLOG_POSTS: BlogPost[] = [
+  post9,
   post8,
   post7,
   post5,

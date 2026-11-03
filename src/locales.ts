@@ -86,6 +86,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "October 30, 2026",
+        "tag": "GAMEPLAY",
+        "title": "Latest Gameplay Leaks: Skateboarding in Nova City & Dancing in the Bar (The Captain Is Loving It! 🤭)",
+        "desc": "Stunning new gameplay footage highlights skating through streets on a skateboard and dancing in an underground cyberpunk club where the Captain thoroughly enjoys the vibrant nightlife!",
+        "contentIdx": 40,
+        "pinned": true
+},
+      {
         "date": "October 29, 2026",
         "tag": "GAMEPLAY",
         "title": "Wingsuit Glide from Skyscrapers over Nova City & New Parkour Hybrid Gameplay Showcase!",
@@ -641,6 +649,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026年10月30日",
+        "tag": "实机演示",
+        "title": "「开发中画面」最新实机爆料：在游戏中玩滑板，以及在酒吧中起舞（队长很享受🤭）",
+        "desc": "最新实机画面再度惊艳曝光：玩家可在新星城街头脚踩滑板尽情炫技冲刺，还能前往虚拟酒吧与同伴纵情起舞，看队长在舞池中享受沉浸式派对狂欢！",
+        "contentIdx": 40,
+        "pinned": true
+},
       {
         "date": "2026年10月29日",
         "tag": "实机爆料",
@@ -1198,6 +1214,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026年10月30日",
+        "tag": "實機演示",
+        "title": "「開發中畫面」最新實機爆料：在遊戲中玩滑板，以及在酒吧中起舞（隊長很享受🤭）",
+        "desc": "最新實機畫面再度驚豔曝光：玩家可在新星城街頭腳踩滑板盡情炫技衝刺，還能前往虛擬酒吧與同伴縱情起舞，看隊長在舞池中享受沉浸式派對狂歡！",
+        "contentIdx": 40,
+        "pinned": true
+},
+      {
         "date": "2026年10月29日",
         "tag": "實機爆料",
         "title": "最新實機：穿著翼裝從大樓一躍而下，諾瓦城上空飛翔與跑酷結合新玩法",
@@ -1753,6 +1777,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年10月30日",
+        "tag": "実机デモ",
+        "title": "「開発中画面」最新実机リーク：ゲーム内でのスケートボード体験と、バーでのダンス（キャプテンは大満喫🤭）",
+        "desc": "最新のゲームプレイ映像が公開！新星シティの街をスケートボードで駆け抜け、サイバーパンクなバーのダンスフロアでキャプテンが最高のひとときを楽しむ様子をお届け！",
+        "contentIdx": 40,
+        "pinned": true
+},
       {
         "date": "2026年10月29日",
         "tag": "ゲームプレイ",
@@ -2310,6 +2342,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 10월 30일",
+        "tag": "실기 플레이",
+        "title": "「개발 중 화면」 최신 실기 유출: 게임 내 스케이트보드 플레이와 바에서의 댄스 (캡틴이 푹 빠졌어요🤭)",
+        "desc": "신규 실기 영상 공개! 노바 시티 거리에서 스케이트보드를 타고 질주하며, 사이버펑크 바의 댄스플로어에서 캡틴이 파티를 즐기는 생동감 넘치는 일상을 확인하세요!",
+        "contentIdx": 40,
+        "pinned": true
+},
+      {
         "date": "2026년 10월 29일",
         "tag": "게임플레이",
         "title": "마천루에서 윙슈트 다이빙! 노바 시티 상공 비행 및 파르쿠르 결합 신규 플레이 공개",
@@ -2865,6 +2905,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "30. Oktober 2026",
+        "tag": "GAMEPLAY",
+        "title": "Aktuelle Gameplay-Leaks: Skateboarden in Nova City & Tanzen in der Bar (Der Captain genießt es! 🤭)",
+        "desc": "Atemberaubendes neues Gameplay zeigt Agenten auf Skateboards durch die Straßen sausen und in einem Club tanzen, wo der Captain die Party in vollen Zügen genießt!",
+        "contentIdx": 40,
+        "pinned": true
+},
       {
         "date": "29. Oktober 2026",
         "tag": "GAMEPLAY",
@@ -3422,6 +3470,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "30 octobre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Dernières fuites de gameplay : Skate à Nova City & Danse au bar (Le Capitaine kiffe ! 🤭)",
+        "desc": "De nouvelles images de gameplay époustouflantes montrent des agents faisant du skate dans les rues et dansant dans un club cyberpunk où le capitaine profite à fond !",
+        "contentIdx": 40,
+        "pinned": true
+},
+      {
         "date": "29 octobre 2026",
         "tag": "GAMEPLAY",
         "title": "Vol en wingsuit depuis les gratte-ciels de Nova City & Nouveau gameplay de parkour hybride !",
@@ -3978,6 +4034,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "30 ottobre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Ultimi leak di gameplay: Skateboard a Nova City e ballo al bar (Il Capitane si gode la serata! 🤭)",
+        "desc": "Splendidi nuovi filmati di gameplay mostrano agenti che sfrecciano sullo skateboard per le strade e ballano in un club cyberpunk, mentre il Capitane si gode la festa!",
+        "contentIdx": 40,
+        "pinned": true
+},
+      {
         "date": "29 ottobre 2026",
         "tag": "GAMEPLAY",
         "title": "Volo in tuta alare dai grattacieli di Nova City e nuovo gameplay ibrido di parkour!",
@@ -4533,6 +4597,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "30 октября 2026",
+        "tag": "ГЕЙМПЛЕЙ",
+        "title": "Последние утечки геймплея: Скейтбординг в Нова-Сити и танцы в баре (Капитан в полном восторге! 🤭)",
+        "desc": "Потрясающие новые кадры геймплея показывают агентов на скейтбордах на улицах и танцующих в киберпанк-клубе, где Капитан наслаждается атмосферой по полной!",
+        "contentIdx": 40,
+        "pinned": true
+},
       {
         "date": "29 октября 2026 г.",
         "tag": "ИГРОВОЙ ПРОЦЕСС",
