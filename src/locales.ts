@@ -86,6 +86,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "November 4, 2026",
+        "tag": "GAMEPLAY",
+        "title": "Latest Gameplay Leaks: Seymour Gunfight Combat Showcase & Seamless Character Switching",
+        "desc": "Stunning new gameplay footage highlights hacker Seymour's tactical gunplay and shooting action across Nova City, followed by a smooth live presentation of zero-loading character switching!",
+        "contentIdx": 41,
+        "pinned": true
+},
+      {
         "date": "October 30, 2026",
         "tag": "GAMEPLAY",
         "title": "Latest Gameplay Leaks: Skateboarding in Nova City & Dancing in the Bar (The Captain Is Loving It! 🤭)",
@@ -649,6 +657,14 @@ export const translations = {
       "mapLegend": "地图区域图例"
     },
     "newsData": [
+      {
+        "date": "2026年11月4日",
+        "tag": "实机演示",
+        "title": "最新实机爆料：赛墨角色实机枪战玩法与无缝角色切换特辑",
+        "desc": "最新实机画面再度惊艳曝光！带来黑客赛墨的高能实机枪战特技射击，以及行云流水的实机动态展示与丝滑零加载角色切换机制！",
+        "contentIdx": 41,
+        "pinned": true
+},
       {
         "date": "2026年10月30日",
         "tag": "实机演示",
@@ -1214,6 +1230,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026年11月4日",
+        "tag": "實機演示",
+        "title": "最新實機爆料：賽墨角色實機槍戰玩法與無縫角色切換特輯",
+        "desc": "最新實機畫面再度驚艷曝光！帶來黑客賽墨的高能實機槍戰特技射擊，以及行雲流水的實機動態展示與絲滑零加載角色切換機制！",
+        "contentIdx": 41,
+        "pinned": true
+},
+      {
         "date": "2026年10月30日",
         "tag": "實機演示",
         "title": "「開發中畫面」最新實機爆料：在遊戲中玩滑板，以及在酒吧中起舞（隊長很享受🤭）",
@@ -1777,6 +1801,14 @@ export const translations = {
       "mapLegend": "マップの凡例"
     },
     "newsData": [
+      {
+        "date": "2026年11月4日",
+        "tag": "実机デモ",
+        "title": "最新ゲームプレイリーク：セイモアの銃撃戦アクション＆シームレスなキャラクター切替特集",
+        "desc": "ハッカー・セイモアによるハイテク戦術ガンファイトと、驚異的なスムーズさを誇るリアルタイム・キャラクター切替メカニクスを徹底紹介！",
+        "contentIdx": 41,
+        "pinned": true
+},
       {
         "date": "2026年10月30日",
         "tag": "実机デモ",
@@ -2342,6 +2374,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "2026년 11월 4일",
+        "tag": "실기 플레이",
+        "title": "신규 실기 유출: 세이모어 총격전 액션 및 심리스 캐릭터 스위칭 특집",
+        "desc": "해커 세이모어의 전술 총격전 액션과 로딩 없는 초고속 캐릭터 실시간 스위칭 메커니즘을 담은 신규 실기 영상 공개!",
+        "contentIdx": 41,
+        "pinned": true
+},
+      {
         "date": "2026년 10월 30일",
         "tag": "실기 플레이",
         "title": "「개발 중 화면」 최신 실기 유출: 게임 내 스케이트보드 플레이와 바에서의 댄스 (캡틴이 푹 빠졌어요🤭)",
@@ -2905,6 +2945,14 @@ export const translations = {
       "mapLegend": "Kartenlegenden-Zonen"
     },
     "newsData": [
+      {
+        "date": "4. November 2026",
+        "tag": "GAMEPLAY",
+        "title": "Neueste Gameplay-Leaks: Seymours Schießerei-Action & nahtloser Charakterwechsel",
+        "desc": "Atemberaubendes neues Gameplay zeigt Hacker Seymours taktische Schießereien in Nova City sowie eine flüssige Präsentation des ladefreien Charakterwechsels!",
+        "contentIdx": 41,
+        "pinned": true
+},
       {
         "date": "30. Oktober 2026",
         "tag": "GAMEPLAY",
@@ -3470,6 +3518,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "4 novembre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Dernières fuites de gameplay : Action de tir de Seymour & Changement de personnage fluide",
+        "desc": "De nouvelles images de gameplay mettent en avant les fusillades tactiques du hacker Seymour à Nova City ainsi qu'un changement de personnage instantané !",
+        "contentIdx": 41,
+        "pinned": true
+},
+      {
         "date": "30 octobre 2026",
         "tag": "GAMEPLAY",
         "title": "Dernières fuites de gameplay : Skate à Nova City & Danse au bar (Le Capitaine kiffe ! 🤭)",
@@ -4034,6 +4090,14 @@ export const translations = {
     },
     "newsData": [
       {
+        "date": "4 novembre 2026",
+        "tag": "GAMEPLAY",
+        "title": "Ultimi leak di gameplay: Azione di fuoco di Seymour e cambio personaggio fluido",
+        "desc": "Splendidi filmati di gameplay mostrano le sparatorie tattiche dell'hacker Seymour a Nova City e una presentazione fluida del cambio di personaggio in tempo reale!",
+        "contentIdx": 41,
+        "pinned": true
+},
+      {
         "date": "30 ottobre 2026",
         "tag": "GAMEPLAY",
         "title": "Ultimi leak di gameplay: Skateboard a Nova City e ballo al bar (Il Capitane si gode la serata! 🤭)",
@@ -4597,6 +4661,14 @@ export const translations = {
       "mapLegend": "Легенда зон карты"
     },
     "newsData": [
+      {
+        "date": "4 ноября 2026",
+        "tag": "ГЕЙМПЛЕЙ",
+        "title": "Последние утечки геймплея: Перестрелки Сеймура и бесшовная смена персонажей",
+        "desc": "Новые кадры геймплея демонстрируют тактические перестрелки хакера Сеймура в Нова-Сити и молниеносную смену персонажей без экранов загрузки!",
+        "contentIdx": 41,
+        "pinned": true
+},
       {
         "date": "30 октября 2026",
         "tag": "ГЕЙМПЛЕЙ",
